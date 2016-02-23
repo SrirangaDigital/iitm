@@ -69,7 +69,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"><img src="<?=PUBLIC_URL?>images/logo.png" alt="Logo of the Indian Academy of Sciences" class="img-circle"></a>
-                <p class="navbar-text">Indian Academy of Sciences</p>
+                <p class="navbar-text">Indian Institute of Technology Madras</p>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <?=$this->printNavigation($navigation)?>
