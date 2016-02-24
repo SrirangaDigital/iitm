@@ -6,7 +6,7 @@ define('DEFAULT_ISSUE', '01');
 define('DEFAULT_PAGE', '0001-0010');
 
 // db table names
-define('METADATA_TABLE', 'article');
+define('METADATA_TABLE', 'photos');
 define('FORTHCOMING_TABLE', 'forthcoming');
 define('FULLTEXT_TABLE', 'fulltextsearch');
 define('FELLOW_TABLE', 'fellow');
