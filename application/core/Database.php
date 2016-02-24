@@ -32,6 +32,7 @@ class Database extends PDO {
 	public function createDB($db, $schema) {
 
 		$db = $this->prependDB($db);
+		//~ echo $db;
 		try {
 		    $dbh = new PDO('mysql:host=' . DB_HOST . ';', constant($db . '_USER'), constant($db . '_PASSWORD'));
 		    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -47,7 +48,6 @@ class Database extends PDO {
 	}
 
 	public function createTable($table, $dbh, $schema) {
-	
 		$sth = $dbh->prepare($schema);
 		$sth->execute();
 	}
@@ -71,6 +71,15 @@ class Database extends PDO {
 			$sth->execute(array_values($row));
 		}
 	}
+	
+	public function insertPhotoData($table, $dbh, $data) {
+		// Take list of keys as in schema and data
+	    $keys = implode(', ', array_keys($data));
+	    // form unnamed placeholders with count number of ? marks
+	    $bindValues =  str_repeat('?, ', count($data) - 1) . ' ?';
+	    $sth = $dbh->prepare('INSERT INTO ' . $table . ' (' . $keys .') VALUES (' . $bindValues . ')');
+		$sth->execute(array_values($data));
+	}
 
 	public function executeQuery($dbh = null, $query = '') {
 
@@ -79,7 +88,6 @@ class Database extends PDO {
 	}
 
 	public function prependDB($db = DEFAULT_JOURNAL) {
-
 		return DB_PREFIX . strtoupper($db);
 	}
 	

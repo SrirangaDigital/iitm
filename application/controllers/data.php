@@ -18,7 +18,7 @@ class data extends Controller {
 
 		if ($metaData) {
 
-			$this->model->db->createDB($journal, JOURNAL_DB_SCHEMA);
+			$this->model->db->createDB($journal, PHOTOS_DB_SCHEMA);
 
 			$dbh = $this->model->db->connect($journal);
 			
@@ -36,7 +36,7 @@ class data extends Controller {
 	
 	public function insertFulltext($journal = DEFAULT_JOURNAL) {
 		
-		$this->model->db->createDB($journal, JOURNAL_DB_SCHEMA);
+		$this->model->db->createDB($journal, PHOTOS_DB_SCHEMA);
 			
 		$dbh = $this->model->db->connect($journal);
 
@@ -49,6 +49,41 @@ class data extends Controller {
 		$this->model->db->executeQuery($dbh, FULLTEXT_INDEX_SCHEMA);
 	}
 
+
+	public function insertPhotoDetails(){
+		
+		//First list all xml files in Photos folder
+		$folderName =  PHY_VOL_URL . "*.json";
+
+		$filesList = glob($folderName);
+
+		if($filesList){
+			$this->model->db->createDB(GENERAL_DB_NAME, PHOTOS_DB_SCHEMA);
+
+			$dbh = $this->model->db->connect(GENERAL_DB_NAME);
+			
+			$this->model->db->dropTable(METADATA_TABLE, $dbh);
+			
+			$this->model->db->createTable(METADATA_TABLE, $dbh, METADATA_TABLE_SCHEMA);
+
+			foreach($filesList as $jsonFile){
+				$details = array();
+				$handle = fopen($jsonFile, "r");
+				//~ echo $jsonFile . "<br />";
+				preg_match('/Photos\/(.*)\.json/',$jsonFile,$matches);
+				$details['id'] = $matches[1];
+				$jsonContents = fread($handle, filesize($jsonFile));
+				$details['description'] = $jsonContents;
+				$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $details);			
+				fclose($handle);						
+			}
+		}
+		else{
+			$this->view('error/blah');			
+		}
+		 
+	}
+
 	public function insertDetails($type = 'fellow') {
 
 		// Fellow Details are fetched from CSV ('|' separated)
@@ -58,7 +93,7 @@ class data extends Controller {
 
 		if ($details) {
 
-			$this->model->db->createDB(GENERAL_DB_NAME, JOURNAL_DB_SCHEMA);
+			$this->model->db->createDB(GENERAL_DB_NAME, PHOTOS_DB_SCHEMA);
 
 			$dbh = $this->model->db->connect(GENERAL_DB_NAME);
 			
