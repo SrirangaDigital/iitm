@@ -74,14 +74,8 @@ class data extends Controller {
 				
 				$details['id'] = $matches[1];
 				$jsonContents = fread($handle, filesize($jsonFile));
-				$details['description'] = $jsonContents;
+				$details['description'] = json_decode($jsonContents);
 				fclose($handle);					
-
-				$tempString = $details['description'];
-				$pattern1 = '/"id":' . '"'. $details['id'] . '",/';
-				// echo $pattern . "<br />";
-				$tempString = preg_replace($pattern1,'',$details['description']);
-				// echo $tempString . "<br />";
 
 				if(file_exists(PHY_VOL_URL . $details['id'])){ 
 					$subFolderFilesList = glob(PHY_VOL_URL . $details['id'] . "/*.json");
@@ -90,20 +84,16 @@ class data extends Controller {
 						$subHandle = fopen($subJsonFile, "r");
 						$subJsonContents = fread($subHandle, filesize($subJsonFile));
 						fclose($subHandle);
-						 // echo $subJsonFile . "<br />";
 						preg_match('/Photos\/(.*)\/(.*)\.json/',$subJsonFile,$subMatches);
-						// echo $subMatches[2] . "<br />";
 						$subDetails['id'] = $subMatches[2];
-
-						// echo $tempString . "<br />";	
-						$subDetails['description'] =  $tempString . $subJsonContents;
-						$subDetails['description'] = preg_replace('/\}\]\s*\[\{/', ', ', $subDetails['description']);
-						// echo $subDetails['description'] . "<br />";
+						$subDetails['description'] = json_decode($subJsonContents);
+						$result = array_merge((array)$details['description'][0],(array)$subDetails['description'][0]);
+						$subDetails['description'] = json_encode($result,JSON_UNESCAPED_UNICODE);
 						$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $subDetails);
 					}
 				}
 				else{
-					// echo $details['description'] . "<br />";					
+					$details['description'] = json_encode($details['description'],JSON_UNESCAPED_UNICODE);			
 					$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $details);			
 				}
 			}
