@@ -1,10 +1,10 @@
-<!-- Footer -->
-<div id="k-subfooter">
+    <!-- Footer -->
+    <div id="k-subfooter">
         <div class="container"><!-- container -->
             <div class="row"><!-- row -->
                 <div class="col-lg-6">
                     <p class="copy-text text-left">
-                        © 2015 Indian Academy of Sciences, Bengaluru.
+                        © 2016 Indian Institute of Technology Madras.
                     </p>
                 </div>
                 <div class="col-lg-6">

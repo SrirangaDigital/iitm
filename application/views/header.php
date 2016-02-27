@@ -4,7 +4,7 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title><?php if($pageTitle) echo $pageTitle . ' | '; ?>Indian Academy of Sciences</title>
+    <title><?php if($pageTitle) echo $pageTitle . ' | '; ?>Indian Institute of Technology Madras</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -14,6 +14,7 @@
 
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" id="royal_enqueue_Lato-css" href="http://fonts.googleapis.com/css?family=Lato%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1.0.0" type="text/css" media="all">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
     <link href="//fonts.googleapis.com/css?family=Raleway:100,400,300,600" rel="stylesheet" type="text/css">
 
@@ -26,12 +27,6 @@
 
     <!-- Only MathHax goes here
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-        });
-    </script>
     <script type="text/javascript" src="<?=PUBLIC_URL?>js/common.js"></script>
     
     <!-- CSS
@@ -61,20 +56,31 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <nav class="navbar navbar-default navbar-fixed-top wider">
         <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="<?=PUBLIC_URL?>images/logo.png" alt="Logo of the Indian Academy of Sciences" class="img-circle"></a>
-                <p class="navbar-text">Indian Institute of Technology Madras</p>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <?=$this->printNavigation($navigation)?>
-            </div><!--/.nav-collapse -->
-        </div>
+            <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Heritage Centre</a></li>
+                    <li><a>·</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a>·</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#"><img src="<?=PUBLIC_URL?>images/logo.png" alt="Logo of the Indian Institute of Technology Madras" class="img-circle logo"></a></li>
+                    <li><a href="#">Physical Space</a></li>
+                    <li><a>·</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a>·</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
     <!-- End Navigation
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
