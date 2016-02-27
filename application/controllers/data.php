@@ -71,17 +71,36 @@ class data extends Controller {
 				$handle = fopen($jsonFile, "r");
 				//~ echo $jsonFile . "<br />";
 				preg_match('/Photos\/(.*)\.json/',$jsonFile,$matches);
+				
 				$details['id'] = $matches[1];
 				$jsonContents = fread($handle, filesize($jsonFile));
-				$details['description'] = $jsonContents;
-				$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $details);			
-				fclose($handle);						
+				$details['description'] = json_decode($jsonContents);
+				fclose($handle);					
+
+				if(file_exists(PHY_VOL_URL . $details['id'])){ 
+					$subFolderFilesList = glob(PHY_VOL_URL . $details['id'] . "/*.json");
+					foreach($subFolderFilesList as $subJsonFile){
+						$subDetails = array();
+						$subHandle = fopen($subJsonFile, "r");
+						$subJsonContents = fread($subHandle, filesize($subJsonFile));
+						fclose($subHandle);
+						preg_match('/Photos\/(.*)\/(.*)\.json/',$subJsonFile,$subMatches);
+						$subDetails['id'] = $subMatches[2];
+						$subDetails['description'] = json_decode($subJsonContents);
+						$result = array_merge((array)$details['description'][0],(array)$subDetails['description'][0]);
+						$subDetails['description'] = json_encode($result,JSON_UNESCAPED_UNICODE);
+						$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $subDetails);
+					}
+				}
+				else{
+					$details['description'] = json_encode($details['description'],JSON_UNESCAPED_UNICODE);			
+					$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $details);			
+				}
 			}
 		}
 		else{
 			$this->view('error/blah');			
 		}
-		 
 	}
 
 	public function insertDetails($type = 'fellow') {

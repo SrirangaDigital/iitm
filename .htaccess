@@ -3,9 +3,6 @@ RewriteEngine On
 
 RewriteBase /iitm
 
-RewriteCond %{REQUEST_URI}  /article/fulltext/*
-RewriteRule article/fulltext/(.*) public/Volumes/$1.pdf [QSA,L]
-
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
