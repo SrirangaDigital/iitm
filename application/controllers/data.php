@@ -71,17 +71,46 @@ class data extends Controller {
 				$handle = fopen($jsonFile, "r");
 				//~ echo $jsonFile . "<br />";
 				preg_match('/Photos\/(.*)\.json/',$jsonFile,$matches);
+				
 				$details['id'] = $matches[1];
 				$jsonContents = fread($handle, filesize($jsonFile));
 				$details['description'] = $jsonContents;
-				$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $details);			
-				fclose($handle);						
+				fclose($handle);					
+
+				$tempString = $details['description'];
+				$pattern1 = '/"id":' . '"'. $details['id'] . '",/';
+				// echo $pattern . "<br />";
+				$tempString = preg_replace($pattern1,'',$details['description']);
+				// echo $tempString . "<br />";
+
+				if(file_exists(PHY_VOL_URL . $details['id'])){ 
+					$subFolderFilesList = glob(PHY_VOL_URL . $details['id'] . "/*.json");
+					foreach($subFolderFilesList as $subJsonFile){
+						$subDetails = array();
+						$subHandle = fopen($subJsonFile, "r");
+						$subJsonContents = fread($subHandle, filesize($subJsonFile));
+						fclose($subHandle);
+						 // echo $subJsonFile . "<br />";
+						preg_match('/Photos\/(.*)\/(.*)\.json/',$subJsonFile,$subMatches);
+						// echo $subMatches[2] . "<br />";
+						$subDetails['id'] = $subMatches[2];
+
+						// echo $tempString . "<br />";	
+						$subDetails['description'] =  $tempString . $subJsonContents;
+						$subDetails['description'] = preg_replace('/\}\]\s*\[\{/', ', ', $subDetails['description']);
+						// echo $subDetails['description'] . "<br />";
+						$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $subDetails);
+					}
+				}
+				else{
+					// echo $details['description'] . "<br />";					
+					$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $details);			
+				}
 			}
 		}
 		else{
 			$this->view('error/blah');			
 		}
-		 
 	}
 
 	public function insertDetails($type = 'fellow') {
