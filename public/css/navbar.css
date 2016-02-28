@@ -9,6 +9,8 @@
 	}
 	.wider .logo{
 		height: 110px !important;
+		margin-left: 10px;
+		margin-right: 10px;
 		transition: height 0.3s ease;
 	}
 	.navbar-nav>li>a{

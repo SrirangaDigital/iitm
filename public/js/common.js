@@ -94,7 +94,7 @@ jQuery(window).load(function () {
             // Ensures that all top-level elements have equal width and stay centered
             
             jQuery('#posts, #grid').css('width', posts_width);
-            jQuery('#posts').css({'margin-left': '-20px'});
+            // jQuery('#posts').css({'margin-left': '-20px'});
                 
         
         
