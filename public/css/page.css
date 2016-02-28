@@ -183,3 +183,48 @@ a.moretag {
 .sub-nav > li > a:hover{
     color: #444444;
 }
+
+/*Masonry Layout*/
+
+#posts { margin: 30px auto 0; }
+.post {
+    margin: 0 0 25px;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #efefef;
+}
+.post img {
+    padding: 0 15px;
+    width: 100%;
+}
+.post .image-desc {
+    padding: 15px;
+}
+
+#grid.container .post img { padding: 0; }
+
+/* Small devices */
+@media (min-width: 430px) {
+    #grid > #posts .post { width: 300px; }
+    #grid > #posts .post.cs2 { width: 100%; }
+    .post img { padding: 0; }
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+    #grid > #posts .post { width: 300px; }
+    #grid > #posts .post.cs2 { width: 100%; }
+    .post img { padding: 0; }
+}
+
+/* Medium devices */
+@media (min-width: 992px) {
+    #grid > #posts .post { width: 300px; }
+    #grid > #posts .post.cs2 { width: 100%; }
+}
+
+/* Large devices */
+@media (min-width: 1200px) {
+    #grid > #posts .post { width: 300px; }
+    #grid > #posts .post.cs2 { width: 742px; }
+}

@@ -11,3 +11,63 @@
         </div>
     </div>
 </div>
+<div id="grid" class="container-fluid">
+    <div id="posts">
+        <div class="post">
+            <img src="http://placehold.it/600x400">
+            <p class="image-desc">
+                <strong>Title Goes Title Goes Here Title Goes Here Title Goes Here Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+        <div class="post">
+            <img src="http://placehold.it/400x600">
+            <p class="image-desc">
+                <strong>Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+        <div class="post">
+            <img src="http://placehold.it/600x400">
+            <p class="image-desc">
+                <strong>Title Goes Title Goes Here Title Goes Here Title Goes Here Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+        <div class="post">
+            <img src="http://placehold.it/400x600">
+            <p class="image-desc">
+                <strong>Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+        <div class="post">
+            <img src="http://placehold.it/600x400">
+            <p class="image-desc">
+                <strong>Title Goes Title Goes Here Title Goes Here Title Goes Here Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+        <div class="post">
+            <img src="http://placehold.it/400x600">
+            <p class="image-desc">
+                <strong>Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+        <div class="post">
+            <img src="http://placehold.it/600x400">
+            <p class="image-desc">
+                <strong>Title Goes Title Goes Here Title Goes Here Title Goes Here Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+        <div class="post">
+            <img src="http://placehold.it/400x600">
+            <p class="image-desc">
+                <strong>Title Goes Here</strong><br>
+                <small>Category</small>
+            </p>
+        </div>
+    </div>
+</div>
