@@ -1,3 +1,18 @@
+<div class="container-fluid">
+    <div class="row first-row">
+        <div class="col-md-12 clear-paddings">
+            <div class="fixOverlayDiv">
+                <img class="img-responsive gap-above" src="<?=PUBLIC_URL?>images/stock/slide1.jpg">
+                <div class="OverlayTextMain">
+                    <div class="mainpage">
+                        <h2>IITM Heritage Centre</h2>
+                        <p>The Heritage Centre was formally inaugurated by Dr. Arcot Ramachandran, former Director IIT Madras on 3rd March 2006. The Centre is located on the ground floor of the administration building. The actual idea of a Heritage Centre was mooted in the year 2000 and it has become a reality due to the efforts of the Professor-in-charge Dr. Ajit Kumar Kolar and his team. The Centre will function as a repository of material of heritage value and historical significance of various facets of the Institute.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row first-row">
         <div class="col-md-9">

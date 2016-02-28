@@ -279,16 +279,29 @@ a.moretag {
     width:100%; 
     padding:0px;
 }
-.OverlayText{
+.OverlayText, .OverlayTextMain{
     bottom: 0;
     color: #FFF;
     left: 0;
     position: absolute;
     width: 100%;
     padding: 15px 15px;
-    background: linear-gradient(transparent, #000);
-    font-weight: 600;
+    /*font-weight: 600;*/
+}
+.OverlayText{
+    background: linear-gradient(rgba( 0, 0, 0, 0 ), rgba( 0, 0, 0, 1 ));
+}
+.OverlayTextMain{
+    background: linear-gradient(rgba( 0, 0, 0, 0 ), rgba( 0, 0, 0, 0.3 ), rgba( 0, 0, 0, 0.5 ), rgba( 0, 0, 0, 0.7 ), rgba( 0, 0, 0, 0.8 ), rgba( 0, 0, 0, 0.9 ), rgba( 0, 0, 0, 0.95 ), rgba( 0, 0, 0, 1 )) !important;
 }
 .OverlayText .link{
     float: right;
 }
+.OverlayTextMain .mainpage{
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal !important;
+    max-width: 60%;
+    text-align: left;
+    line-height: 24px;
+}
+
