@@ -67,10 +67,12 @@ class View {
 
 	public function getFolderList($navigation = array()) {
 
-	    $flattened_array = array();
-	    array_walk_recursive($navigation, function($a) use (&$flattened_array) { $flattened_array[] = $a; });
-	
-	    return $flattened_array;
+		$folderList = array();
+		$iterator = new RecursiveIteratorIterator(new RecursiveArrayIterator($navigation));
+		foreach($iterator as $value) {
+  			array_push($folderList, $value);
+		}
+		return $folderList;
 	}
 
 	public function showDynamicPage($data = array(), $path = '', $actualPath = '', $navigation = array()) {
