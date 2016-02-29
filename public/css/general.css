@@ -36,6 +36,9 @@ a {
 .text-blue {
 	color: #2196F3 !important;
 }
+.text-white {
+	color: #FFF !important;
+}
 .text-black {
 	color: #555 !important;
 }
@@ -90,4 +93,7 @@ a {
 }
 .lower-case{
 	text-transform: lowercase !important;
+}
+.bg-blue{
+	background-color: #395B98;
 }

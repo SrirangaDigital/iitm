@@ -1,8 +1,8 @@
 .form-group{
 	margin-bottom: 25px;
+	background-color: transparent;
 }
 .form-group label{
-	color: #363636;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 20px;
@@ -11,6 +11,12 @@
 }
 .form-group textarea{
 	min-height: 50px;
+	background-color: transparent;
+	color: #FFF;
+}
+.form-group input{
+	background-color: transparent;
+	color: #FFF;
 }
 .form-control {
 	border: 1px solid #DEDEDE;
@@ -24,7 +30,7 @@
 .naked{
 	border-radius: 3px;
 	background-color: transparent;	
-	color: #636363;
+	color: #FFF;
 	border-color: #CCC;
 }
 .naked:hover, .naked:active, .naked:focus {
