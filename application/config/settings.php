@@ -6,7 +6,8 @@ define('DEFAULT_ISSUE', '01');
 define('DEFAULT_PAGE', '0001-0010');
 
 // db table names
-define('METADATA_TABLE', 'photos');
+define('METADATA_TABLE_L1', 'album');
+define('METADATA_TABLE_L2', 'photo');
 
 // search settings
 define('SEARCH_OPERAND', 'AND');

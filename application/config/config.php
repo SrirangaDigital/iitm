@@ -14,7 +14,7 @@ define('RESOURCES_URL', PUBLIC_URL . 'Resources/');
 define('PHY_BASE_URL', '/var/www/html/iitm/');
 define('PHY_PUBLIC_URL', PHY_BASE_URL . 'public/');
 define('PHY_XML_SRC_URL', PHY_BASE_URL . 'md-src/xml/');
-define('PHY_VOL_URL', PHY_PUBLIC_URL . 'Photos/');
+define('PHY_PHOTO_URL', PHY_PUBLIC_URL . 'Photos/');
 define('PHY_TXT_URL', PHY_PUBLIC_URL . 'Text/');
 define('PHY_DOWNLOAD_URL', PHY_PUBLIC_URL . 'Downloads/');
 define('PHY_FLAT_URL', PHY_BASE_URL . 'application/views/flat/');
@@ -25,10 +25,10 @@ define('DB_PREFIX', 'iitm');
 define('DB_HOST', 'localhost');
 
 // infra will become iitmINFRA inside
-define('GENERAL_DB_NAME', 'photos');
+define('DB_NAME', 'photo');
 
-define('iitmPHOTOS_USER', 'root');
-define('iitmPHOTOS_PASSWORD', 'mysql');
+define('iitmPHOTO_USER', 'root');
+define('iitmPHOTO_PASSWORD', 'mysql');
 
 
 // IAS Server settings

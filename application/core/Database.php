@@ -61,15 +61,12 @@ class Database extends PDO {
 	public function insertData($table, $dbh, $data) {
 
 		// Take list of keys as in schema and data
-	    $keys = implode(', ', array_keys($data[0]));
+	    $keys = implode(', ', array_keys($data));
 	    // form unnamed placeholders with count number of ? marks
-	    $bindValues =  str_repeat('?, ', count($data[0]) - 1) . ' ?';
+	    $bindValues =  str_repeat('?, ', count($data) - 1) . ' ?';
 	    $sth = $dbh->prepare('INSERT INTO ' . $table . ' (' . $keys .') VALUES (' . $bindValues . ')');
 
-		foreach ($data as $row) {
-
-			$sth->execute(array_values($row));
-		}
+		$sth->execute(array_values($data));
 	}
 	
 	public function insertPhotoData($table, $dbh, $data) {

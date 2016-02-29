@@ -12,56 +12,44 @@ class data extends Controller {
 		$this->insertPhotoDetails();
 	}
 
-	public function insertPhotoDetails(){
+	public function insertDetails(){
+
+		$this->model->db->createDB(DB_NAME, DB_SCHEMA);
+		$dbh = $this->model->db->connect(DB_NAME);
+
+		$this->model->db->dropTable(METADATA_TABLE_L1, $dbh);
+		$this->model->db->createTable(METADATA_TABLE_L1, $dbh, METADATA_TABLE_L1_SCHEMA);
+
+		$this->model->db->dropTable(METADATA_TABLE_L2, $dbh);
+		$this->model->db->createTable(METADATA_TABLE_L2, $dbh, METADATA_TABLE_L2_SCHEMA);
 		
-		//First list all xml files in Photos folder
-		$folderName =  PHY_VOL_URL . "*.json";
+		//List albums
+		$albums = $this->model->listFiles(PHY_PHOTO_URL, 'json');
+		if($albums) {
 
-		$filesList = glob($folderName);
+			$this->model->insertAlbums($albums, $dbh);
 
-		if($filesList){
-			$this->model->db->createDB(GENERAL_DB_NAME, PHOTOS_DB_SCHEMA);
-
-			$dbh = $this->model->db->connect(GENERAL_DB_NAME);
+			foreach ($albums as $album) {
 			
-			$this->model->db->dropTable(METADATA_TABLE, $dbh);
+				// List photos
+				$photos = $this->model->listFiles(str_replace('.json', '/', $album), 'json');
 			
-			$this->model->db->createTable(METADATA_TABLE, $dbh, METADATA_TABLE_SCHEMA);
+				if($photos) {
 
-			foreach($filesList as $jsonFile){
-
-				$details = array();
-				//~ echo $jsonFile . "<br />";
-				preg_match('/Photos\/(.*)\.json/',$jsonFile,$matches);
-				
-				$details['id'] = $matches[1];
-				$jsonContents = file_get_contents($jsonFile);
-				$details['description'] = json_decode($jsonContents);
-
-				if(file_exists(PHY_VOL_URL . $details['id'])){ 
-
-					$subFolderFilesList = glob(PHY_VOL_URL . $details['id'] . "/*.json");
-					foreach($subFolderFilesList as $subJsonFile){
-						$subDetails = array();
-						$subJsonContents = file_get_contents($subJsonFile);
-
-						preg_match('/Photos\/(.*)\/(.*)\.json/',$subJsonFile,$subMatches);
-						$subDetails['id'] = $subMatches[2];
-						$subDetails['description'] = json_decode($subJsonContents);
-						$result = array_merge((array)$details['description'],(array)$subDetails['description']);
-						$subDetails['description'] = json_encode($result,JSON_UNESCAPED_UNICODE);
-						$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $subDetails);
-					}
+					$this->model->insertPhotos($photos, $dbh);
 				}
 				else{
-					$details['description'] = json_encode($details['description'],JSON_UNESCAPED_UNICODE);			
-					$this->model->db->insertPhotoData(METADATA_TABLE, $dbh, $details);			
+
+					echo 'Album ' . $album . ' does not have any photos' . "\n";
 				}
 			}
 		}
 		else{
-			$this->view('error/blah');			
+
+			echo 'No albums to insert';
 		}
+
+		$dbh = null;
 	}
 }
 
