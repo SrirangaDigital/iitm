@@ -67,14 +67,10 @@ class View {
 
 	public function getFolderList($navigation = array()) {
 
-		$folderList = array();
-
-		$iteratorInner = new RecursiveArrayIterator($navigation);
-		$iterator = new RecursiveIteratorIterator($iteratorInner);
-		foreach($iterator as $value) {
-  			array_push($folderList, $value);
-		}
-		return $folderList;
+	    $flattened_array = array();
+	    array_walk_recursive($navigation, function($a) use (&$flattened_array) { $flattened_array[] = $a; });
+	
+	    return $flattened_array;
 	}
 
 	public function showDynamicPage($data = array(), $path = '', $actualPath = '', $navigation = array()) {
