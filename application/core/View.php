@@ -68,7 +68,9 @@ class View {
 	public function getFolderList($navigation = array()) {
 
 		$folderList = array();
-		$iterator = new RecursiveIteratorIterator(new RecursiveArrayIterator($navigation));
+
+		$iteratorInner = new RecursiveArrayIterator($navigation);
+		$iterator = new RecursiveIteratorIterator($iteratorInner);
 		foreach($iterator as $value) {
   			array_push($folderList, $value);
 		}
