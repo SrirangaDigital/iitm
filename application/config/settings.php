@@ -7,22 +7,18 @@ define('DEFAULT_PAGE', '0001-0010');
 
 // db table names
 define('METADATA_TABLE', 'photos');
-define('FORTHCOMING_TABLE', 'forthcoming');
-define('FULLTEXT_TABLE', 'fulltextsearch');
-define('FELLOW_TABLE', 'fellow');
-define('ASSOCIATE_TABLE', 'associate');
 
 // search settings
 define('SEARCH_OPERAND', 'AND');
 
 // user settings (login and registration)
-define('SALT', 'ias');
+define('SALT', 'iitm');
 define('REQUIRE_EMAIL_VALIDATION', True);//Set these values to True only
 define('REQUIRE_RESET_PASSWORD', True);//if outbound mails can be sent from the server
 
 // mailer settings
-define('SERVICE_EMAIL', 'webadmin@ias.ernet.in');
-define('SERVICE_NAME', 'Indian Academy of Sciences');
+define('SERVICE_EMAIL', 'webadmin@iitm.ac.in');
+define('SERVICE_NAME', 'Indian Institute of Technology Madras');
 
 
 ?>

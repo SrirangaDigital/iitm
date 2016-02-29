@@ -6,7 +6,7 @@ class Database extends PDO {
 	
 	}
 
-	public function connect($db = DEFAULT_JOURNAL) {
+	public function connect($db) {
 
 		$db = $this->prependDB($db);
 		if(!(defined($db . '_USER'))) {

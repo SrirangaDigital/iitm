@@ -18,7 +18,7 @@ class Controller {
 		}
 	}
 	
-	public function view($path, $data = array(), $journal = '') {
+	public function view($path, $data = array()) {
 
 		$view = new View();
 		$model = new Model();
@@ -31,12 +31,8 @@ class Controller {
 		$actualPath = $view->getActualPath($path, $folderList);
 		// Actual path is given path for dynamic pages
 		if(!($actualPath)) $actualPath = $path;
-		// Get journal name from URL if not passed
-		if ($journal == '') $journal = $view->getJournalFromPath($path);
-		// Get current issue details for specific journal
-		$current = ($journal) ? $model->getCurrentIssue($journal) : array();
 		// Show Page
-		(preg_match('/flat\/[^Home]|error|prompt/', $path)) ? $view->showFlatPage($data, $path, $actualPath, $journal, $navigation, $current) : $view->showDynamicPage($data, $path, $actualPath, $journal, $navigation, $current);
+		(preg_match('/flat\/[^Home]|error|prompt/', $path)) ? $view->showFlatPage($data, $path, $actualPath, $navigation) : $view->showDynamicPage($data, $path, $actualPath, $navigation);
 	}
 
 	public function isLoggedIn() {

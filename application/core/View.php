@@ -2,12 +2,9 @@
 
 class View {
 
-    public $journalShortNames = array("jcsc" => "J. of Chemical Sciences","pmsc" => "Procs. Mathematical Sciences","jess" => "J. of Earth System Science","sadh" => "Sadhana","pram" => "Pramana","jbsc" => "J. of Biosciences","boms" => "Bul. of Materials Science","joaa" => "J. of Astrophysics and Astronomy","jgen" => "J. of Genetics","reso" => "Resonance");
-    public $journalFullNames = array("jcsc" => "Journal of Chemical Sciences","pmsc" => "Proceedings – Mathematical Sciences","jess" => "Journal of Earth System Science","sadh" => "Sadhana","pram" => "Pramana – Journal of Physics","jbsc" => "Journal of Biosciences","boms" => "Bulletin of Materials Science","joaa" => "Journal of Astrophysics and Astronomy","jgen" => "Journal of Genetics","reso" => "Resonance – Journal of Science Education");
     public $monthNames = array("00" => "","01" => "January","02" => "February","03" => "March","04" => "April","05" => "May","06" => "June","07" => "July","08" => "August","09" => "September","10" => "October","11" => "November","12" => "December");
     public $monthNamesShort = array("00" => "","01" => "Jan","02" => "Feb","03" => "Mar","04" => "Apr","05" => "May","06" => "Jun","07" => "Jul","08" => "Aug","09" => "Sep","10" => "Oct","11" => "Nov","12" => "Dec");
-    public $dateTypes = array("M" => "Manuscript received","R" => "Manuscript revised","A" => "Accepted","E" => "Early published","U" => "Unedited version published online","F" => "Final version published online");
-
+ 
 	public function __construct() {
 
 	}
@@ -78,11 +75,11 @@ class View {
 		return $folderList;
 	}
 
-	public function showDynamicPage($data = array(), $path = '', $actualPath = '', $journal = '', $navigation = array(), $current = array()) {
+	public function showDynamicPage($data = array(), $path = '', $actualPath = '', $navigation = array()) {
 
 		require_once 'application/views/viewHelper.php';
 		$viewHelper = new viewHelper();
-		$pageTitle = $this->getPageTitle($viewHelper, $path, $journal);
+		$pageTitle = $this->getPageTitle($viewHelper, $path);
 
 		require_once 'application/views/header.php';
 		
@@ -100,14 +97,14 @@ class View {
 
 		// Side bar can be included by un-commenting the following line
 		// require_once($this->getSideBar($actualPath, $journal));
-		require_once 'application/views/footer.php';
+		// require_once 'application/views/footer.php';
 	}
 
 	public function showFlatPage($data = array(), $path = '', $actualPath = '', $journal = '', $navigation = array(), $current = array()) {
 
 		require_once 'application/views/viewHelper.php';
 		$viewHelper = new viewHelper();
-		$pageTitle = $this->getPageTitle($viewHelper, $path, $journal);
+		$pageTitle = $this->getPageTitle($viewHelper, $path);
 
 		require_once 'application/views/header.php';
 		require_once 'application/views/flatPageContainer.php';
@@ -197,98 +194,24 @@ class View {
         return htmlentities(str_replace(PHY_FLAT_URL, BASE_URL, $path), ENT_COMPAT, "UTF-8");
     }
 	
-	private function getPageTitle($viewHelper, $path, $journal) {
+	private function getPageTitle($viewHelper, $path) {
 
-		if($journal) {
-			
-			return $viewHelper->journalFullNames{$journal};			
+		if(preg_match('/flat/', $path)){
+
+			// Remove trailing slashes
+			$path = preg_replace('/\/$/', '', $path);
+			$paths = explode('/', $path);
+			// Remove 'flat' from the URL
+			unset($paths[0]);
+			$paths = array_reverse($paths);
+			$paths = array_unique($paths);
+			$pageTitle = implode(' | ', $paths);
+			return preg_replace('/_/', ' ', $pageTitle);
 		}
-		else {
+		else{
 
-			if(preg_match('/flat/', $path)){
-
-				// Remove trailing slashes
-				$path = preg_replace('/\/$/', '', $path);
-				$paths = explode('/', $path);
-				// Remove 'flat' from the URL
-				unset($paths[0]);
-				$paths = array_reverse($paths);
-				$paths = array_unique($paths);
-				$pageTitle = implode(' | ', $paths);
-				return preg_replace('/_/', ' ', $pageTitle);
-			}
-			else{
-
-				if(preg_match('/fellow/', $path)){
-
-					return 'Fellowship';
-				}
-				elseif(preg_match('/associate/', $path)){
-
-					return 'Associateship';
-				}
-				else{
-
-					return '';
-				}
-			}
+			return '';
 		}
-    }
-    
-    private function getSideBar($path, $journal = '') {
-
-    	if($journal) {
-
-    		switch ($journal) {
-			    case 'boms':
-					$path = 'flat/4-Journals/2-Bulletin_of_Materials_Science';
-					break;
-				case 'joaa':
-					$path = 'flat/4-Journals/3-Journal_of_Astrophysics_and_Astronomy';
-					break;
-				case 'jbsc':
-					$path = 'flat/4-Journals/4-Journal_of_Biosciences';
-					break;
-				case 'jcsc':
-					$path = 'flat/4-Journals/5-Journal_of_Chemical_Sciences';
-					break;
-				case 'jess':
-					$path = 'flat/4-Journals/6-Journal_of_Earth_System_Science';
-					break;
-				case 'jgen':
-					$path = 'flat/4-Journals/7-Journal_of_Genetics';
-					break;
-				case 'pram':
-					$path = 'flat/4-Journals/8-Pramana_–_Journal_of_Physics';
-					break;
-				case 'pmsc':
-					$path = 'flat/4-Journals/9-Proceedings_–_Mathematical_Sciences';
-					break;
-				case 'reso':
-					$path = 'flat/4-Journals/10-Resonance_–_Journal_of_Science_Education';
-					break;
-				case 'sadh':
-					$path = 'flat/4-Journals/11-Sadhana';
-					break;
-			}
-		}
-
-	    if(file_exists('application/views/' . $path . '/sideBar.php')) {
-
-        	return 'application/views/' . $path . '/sideBar.php'; 
-        }
-		elseif(file_exists('application/views/' . preg_replace('/(.*)\/(.*)/', "$1", $path) . '/sideBar.php')) {
-
-        	return 'application/views/' . preg_replace('/(.*)\/(.*)/', "$1", $path) . '/sideBar.php'; 
-        }
-        elseif(file_exists('application/views/' . $path . '/../sideBar.php')) {
-
-        	return 'application/views/' . $path . '/../sideBar.php'; 
-        }
-        else{
-
-        	return 'application/views/generalSidebar.php';
-        }
     }
 }
 
