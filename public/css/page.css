@@ -485,7 +485,7 @@ a.moretag {
 .physical{
     background-color: #FFF;
     color: #5D5D5D;
-    padding: 100px 60px 30px 60px;
+    padding: 100px 60px 0px 60px;
     font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
     font-weight: 400;
