@@ -9,21 +9,18 @@ class listingModel extends Model {
 
 	public function listAlbums() {
 
-		$dbh = $this->db->connect(GENERAL_DB_NAME);
+		$dbh = $this->db->connect(DB_NAME);
 		if(is_null($dbh))return null;
 		
-		$sth = $dbh->prepare('SELECT id FROM ' . METADATA_TABLE . ' order by id');
+		$sth = $dbh->prepare('SELECT * FROM ' . METADATA_TABLE_L1 . ' ORDER BY albumID');
 		
 		$sth->execute();
 		$data = array();
 		
-		// Extract only the album id which is attached to each image name
 		while($result = $sth->fetch(PDO::FETCH_OBJ)) {
 
-			array_push($data, preg_replace("/_.*/", "", $result->id));
+			array_push($data, $result);
 		}
-
-		$data = array_values(array_unique($data));
 		$dbh = null;
 		return $data;
 	}

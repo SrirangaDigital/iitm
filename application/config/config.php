@@ -4,7 +4,7 @@
 define('BASE_URL', 'http://localhost/iitm/');
 define('PUBLIC_URL', BASE_URL . 'public/');
 define('XML_SRC_URL', BASE_URL . 'md-src/xml/');
-define('VOL_URL', PUBLIC_URL . 'Photos/');
+define('PHOTO_URL', PUBLIC_URL . 'Photos/');
 define('DOWNLOAD_URL', PUBLIC_URL . 'Downloads/');
 define('STOCK_IMAGE_URL', PUBLIC_URL . 'images/stock/');
 define('RESOURCES_URL', PUBLIC_URL . 'Resources/');

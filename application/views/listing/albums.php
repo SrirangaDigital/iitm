@@ -13,16 +13,18 @@
 </div>
 <div id="grid" class="container-fluid">
     <div id="posts">
+<?php foreach ($data as $row) { ?>
         <div class="post">
             <a href="#" title="View Album">
                 <div class="fixOverlayDiv">
-                    <img class="img-responsive" src="http://placehold.it/300?text=Album">
-                    <div class="OverlayText">56 Photographs<br /><small>Convocation / VIP visit</small> <span class="link"><i class="fa fa-link"></i></span></div>
+                    <img class="img-responsive" src="<?=$viewHelper->includeRandomThumbnail($row->albumID)?>">
+                    <div class="OverlayText"><?=$viewHelper->getPhotoCount($row->albumID)?><br /><small><?=$viewHelper->getDetailByField($row->description, 'Event')?></small> <span class="link"><i class="fa fa-link"></i></span></div>
                 </div>
             </a>
             <p class="image-desc">
-                <strong>Album title goes here</strong>
+                <strong><?=$viewHelper->getDetailByField($row->description, 'Title')?></strong>
             </p>
         </div>
+<?php } ?>
     </div>
 </div>
