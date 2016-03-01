@@ -193,6 +193,9 @@ a.moretag {
     width: 100%;
     border: 1px solid #efefef;
 }
+.post a{
+    color: inherit;
+}
 .post img {
     width: 100%;
 }

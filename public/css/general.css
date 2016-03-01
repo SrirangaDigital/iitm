@@ -19,7 +19,7 @@ a {
 	padding: 0;
 }
 .first-row{
-	margin-top: 100px;
+	margin-top: 70px;
 }
 .widget-container{
 	margin-bottom: 50px;
@@ -96,4 +96,7 @@ a {
 }
 .bg-blue{
 	background-color: #395B98;
+}
+.no-border{
+	border: none !important;
 }

@@ -6,11 +6,20 @@ class viewHelper extends View {
 
 	}
 
-    public function getDetailByField($json = '', $field) {
+    public function getDetailByField($json = '', $firstField = '', $secondField = '') {
 
         $data = json_decode($json, true);
 
-        return (isset($data[$field])) ? $data[$field] : '';
+        if (isset($data[$firstField])) {
+      
+            return $data[$firstField];
+        }
+        elseif (isset($data[$secondField])) {
+      
+            return $data[$secondField];
+        }
+
+        return '';
     }
 
     public function getPhotoCount($id = '') {
@@ -26,6 +35,39 @@ class viewHelper extends View {
         $photoSelected = $photos[$randNum];
 
         return str_replace(PHY_PHOTO_URL, PHOTO_URL, $photoSelected);
+    }
+
+    public function displayFieldData($json) {
+
+        $data = json_decode($json);
+
+        $html = '';
+        $html .= '<ul class="list-unstyled">';
+
+        foreach ($data as $key => $value) {
+
+            if(preg_match('/keyword/i', $key)) {
+
+                $html .= '<li class="keywords"><strong>' . $key . ':</strong><span class="image-desc-meta">';
+                
+                $keywords = explode(',', $value);
+                foreach ($keywords as $keyword) {
+   
+                    $html .= '<a href="' . BASE_URL . 'search/field/' . str_replace(' ', '_', $keyword) . '">' . str_replace(' ', '&nbsp;', $keyword) . '</a> ';
+                }
+                
+                $html .= '</span></li>' . "\n";
+            }
+            else{
+
+                $html .= '<li><strong>' . $key . ':</strong><span class="image-desc-meta">' . $value . '</span></li>' . "\n";
+            }
+        }
+
+        $html .= '</ul>';
+
+        return $html;
+        // <li class="keywords"><strong>Keywords:</strong><span class="image-desc-meta"><a href="#">Zail Singh</a> <a href="#">Convocation</a> <a href="#">Indaresan</a> <a href="#">Raja Ramanna</a> <a href="#">Sheila Kaul</a> <a href="#">Students\'&nbsp;Activities&nbsp;Centre</a></span></li>
     }
 }
 

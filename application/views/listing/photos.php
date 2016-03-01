@@ -1,3 +1,5 @@
+<?php $albumDetails = $data['albumDetails']; unset($data['albumDetails']);?>
+
 <div class="container">
     <div class="row first-row">
         <!-- Column 1 -->
@@ -13,15 +15,18 @@
 </div>
 <div id="grid" class="container-fluid">
     <div id="posts">
+        <div class="post no-border">
+            <div class="image-desc-full">
+                <?=$viewHelper->displayFieldData($albumDetails->description)?>
+            </div>
+        </div>
 <?php foreach ($data as $row) { ?>
         <div class="post">
-            <a href="<?=BASE_URL?>listing/photos/<?=$row->albumID?>" title="View Album">
-                <div class="fixOverlayDiv">
-                    <img class="img-responsive" src="<?=$viewHelper->includeRandomThumbnail($row->albumID)?>">
-                    <div class="OverlayText"><?=$viewHelper->getPhotoCount($row->albumID)?><br /><small><?=$viewHelper->getDetailByField($row->description, 'Event')?></small> <span class="link"><i class="fa fa-link"></i></span></div>
-                </div>
+            <a href="<?=BASE_URL?>describe/photo/<?=$row->id?>" title="View Details">
+                <img src="<?=PHOTO_URL . $row->albumID . '/thumbs/' . $row->id . '.JPG'?>">
                 <p class="image-desc">
-                    <strong><?=$viewHelper->getDetailByField($row->description, 'Title')?></strong>
+                    <strong><?=$viewHelper->getDetailByField($row->description, 'Title', 'Caption')?></strong><br>
+                    <small><?=$viewHelper->getDetailByField($row->description, 'Event')?></small>
                 </p>
             </a>
         </div>
