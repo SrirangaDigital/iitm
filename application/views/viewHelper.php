@@ -37,9 +37,17 @@ class viewHelper extends View {
         return str_replace(PHY_PHOTO_URL, PHOTO_URL, $photoSelected);
     }
 
-    public function displayFieldData($json) {
+    public function displayFieldData($json, $auxJson='') {
 
-        $data = json_decode($json);
+        $data = json_decode($json, true);
+        
+        if ($auxJson) $data = array_merge($data, json_decode($auxJson, true));
+        
+        if(isset($data['id'])) {
+
+            $data['id'] = $data['albumID'] . '/' . $data['id'];
+            unset($data['albumID']);
+        }
 
         $html = '';
         $html .= '<ul class="list-unstyled">';

@@ -45,21 +45,6 @@ class listingModel extends Model {
 		$data['albumDetails'] = $this->getAlbumDetails($albumID);
 		return $data;
 	}
-
-	public function getAlbumDetails($albumID) {
-
-		$dbh = $this->db->connect(DB_NAME);
-		if(is_null($dbh))return null;
-		
-		$sth = $dbh->prepare('SELECT * FROM ' . METADATA_TABLE_L1 . ' WHERE albumID = :albumID');
-		$sth->bindParam(':albumID', $albumID);
-
-		$sth->execute();
-		
-		$result = $sth->fetch(PDO::FETCH_OBJ);
-		$dbh = null;
-		return $result;
-	}
 }
 
 ?>

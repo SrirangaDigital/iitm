@@ -36,74 +36,6 @@ class Model {
 		}
 	}
 
-	public function listSeries() {
-
-		$dbh = $this->db->connect();
-		if(is_null($dbh))return null;
-		
-		$sth = $dbh->prepare('select distinct snum,year from project order by snum');
-		$sth->execute();
-
-		$i = 0;
-		while($result = $sth->fetch(PDO::FETCH_ASSOC))
-		{
-			$data[$i] = $result;
-	        $i++;
-		}
-		$dbh = null;
-		return $data;
-	}
-
-	public function listDepartments() {
-
-		$dbh = $this->db->connect();
-		if(is_null($dbh))return null;
-		
-		$sth = $dbh->prepare('SELECT DISTINCT department FROM project ORDER BY department');
-		$sth->execute();
-
-		$i = 0;
-		while($result = $sth->fetch(PDO::FETCH_ASSOC))
-		{
-			$data[$i] = $result;
-	        $i++;
-		}
-		$dbh = null;
-		return $data;
-	}
-
-	public function listColleges() {
-
-		$dbh = $this->db->connect();
-		if(is_null($dbh))return null;
-		
-		$sth = $dbh->prepare('SELECT DISTINCT college FROM project ORDER BY college');
-		$sth->execute();
-
-		$i = 0;
-		while($result = $sth->fetch(PDO::FETCH_ASSOC))
-		{
-			$data[$i] = $result;
-	        $i++;
-		}
-		$dbh = null;
-		return $data;
-	}
-
-	public function getCurrentIssue($journal = DEFAULT_JOURNAL) {
-
-		$this->db = new Database();
-		$dbh = $this->db->connect($journal);
-		if(is_null($dbh))return null;
-		
-		// Online issues are to filtered from appearing as current issues	
-		$sth = $dbh->prepare('SELECT DISTINCT volume, issue, year, month from ' . METADATA_TABLE . ' WHERE issue != \'online\' ORDER BY volume DESC, issue DESC LIMIT 1');
-		$sth->execute();
-		
-		$result = $sth->fetch(PDO::FETCH_OBJ);
-		return $result;
-	}
-
 	public function preProcessPOST ($data) {
 
 		return array_map("trim", $data);
@@ -152,6 +84,36 @@ class Model {
  
  		return $files;
  	}
+
+	public function getAlbumDetails($albumID) {
+
+		$dbh = $this->db->connect(DB_NAME);
+		if(is_null($dbh))return null;
+		
+		$sth = $dbh->prepare('SELECT * FROM ' . METADATA_TABLE_L1 . ' WHERE albumID = :albumID');
+		$sth->bindParam(':albumID', $albumID);
+
+		$sth->execute();
+		
+		$result = $sth->fetch(PDO::FETCH_OBJ);
+		$dbh = null;
+		return $result;
+	}
+
+	public function getPhotoDetails($albumID, $id) {
+
+		$dbh = $this->db->connect(DB_NAME);
+		if(is_null($dbh))return null;
+		
+		$sth = $dbh->prepare('SELECT * FROM ' . METADATA_TABLE_L2 . ' WHERE albumID = :albumID AND id = :id');
+		$sth->bindParam(':albumID', $albumID);
+		$sth->bindParam(':id', $id);
+		$sth->execute();
+		
+		$result = $sth->fetch(PDO::FETCH_OBJ);
+		$dbh = null;
+		return $result;
+	}
 }
 
 ?>

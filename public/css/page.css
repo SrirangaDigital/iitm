@@ -177,11 +177,11 @@ a.moretag {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    color: #8d8d8d;
+    color: #5d5d5d;
 }
 .sub-nav > li > a.active,
 .sub-nav > li > a:hover{
-    color: #444444;
+    color: #2d2d2d;
 }
 
 /*Masonry Layout*/
@@ -202,6 +202,12 @@ a.moretag {
 .post .image-desc {
     padding: 15px;
     margin-bottom: 0;
+}
+.image-desc > strong:empty{
+    display: none;
+}
+.image-desc > small:empty{
+    display: none;
 }
 
 #grid.container .post img { padding: 0; }
@@ -232,7 +238,10 @@ a.moretag {
     #grid > #posts .post { width: 300px; }
     #grid > #posts .post.cs2 { width: 742px; }
 }
-
+.image-full-size img{
+    max-width: 850px;
+    margin: 0 auto;
+}
 .image-desc-full li{
     font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
@@ -246,7 +255,7 @@ a.moretag {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
-    color: #8d8d8d;
+    color: #5d5d5d;
 }
 .image-desc-full li a{
     color: #e5ae47;
@@ -260,6 +269,7 @@ a.moretag {
 .image-desc-full li strong{
     float: left;
     width: 100px;
+    text-transform: capitalize;
 }
 .image-desc-full .image-desc-meta{
     float: left;

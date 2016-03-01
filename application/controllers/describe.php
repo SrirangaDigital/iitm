@@ -9,34 +9,15 @@ class describe extends Controller {
 
 	public function index() {
 
-		$this->article();
+		$this->photo();
 	}
 
-	public function article($journal = DEFAULT_JOURNAL, $volume = DEFAULT_VOLUME, $issue = DEFAULT_ISSUE, $page = DEFAULT_PAGE) {
+	public function photo($albumID = DEFAULT_ALBUM, $id = '') {
 
-		$data = $this->model->getDetails($journal, $volume, $issue, $page);
-		if ($data) {
-			
-			$path = PHY_VOL_URL . $journal . '/' . $volume . '/' . $issue . '/' . $page . '/';
-			$data->supplementary = $this->model->listFiles($path);
-			$this->view('describe/article', $data, $journal);
-		}
-		else {
-			
-			$this->view('error/index');
-		}
-	}
+		$data['albumDetails'] = $this->model->getAlbumDetails($albumID);
+		$data['photoDetails'] = $this->model->getPhotoDetails($albumID, $id);
 
-	public function fellow($name = '') {
-
-		$data = $this->model->getDetailsByName($name, 'FELLOW');
-		($data) ? $this->view('describe/fellow', $data) : $this->view('error/index');
-	}
-
-	public function associate($name = '') {
-
-		$data = $this->model->getDetailsByName($name, 'ASSOCIATE');
-		($data) ? $this->view('describe/associate', $data) : $this->view('error/index');
+		($data) ? $this->view('describe/photo', $data) : $this->view('error/index');
 	}
 }
 
