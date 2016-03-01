@@ -61,7 +61,7 @@ class viewHelper extends View {
                 $keywords = explode(',', $value);
                 foreach ($keywords as $keyword) {
    
-                    $html .= '<a href="' . BASE_URL . 'search/field/' . str_replace(' ', '_', $keyword) . '">' . str_replace(' ', '&nbsp;', $keyword) . '</a> ';
+                    $html .= '<a href="' . BASE_URL . 'search/field/?description=' . $keyword . '">' . str_replace(' ', '&nbsp;', $keyword) . '</a> ';
                 }
                 
                 $html .= '</span></li>' . "\n";

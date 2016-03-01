@@ -179,6 +179,7 @@ a.moretag {
     font-style: normal;
     text-transform: uppercase;
     color: #5d5d5d;
+    text-decoration: none;
 }
 .sub-nav > li > a.active,
 .sub-nav > li > a:hover{
