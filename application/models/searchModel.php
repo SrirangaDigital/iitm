@@ -37,9 +37,9 @@ class searchModel extends Model {
 		return $data;
 	}
 
-	public function executeQuery($data, $journal = DEFAULT_JOURNAL) {
+	public function executeQuery($data) {
 
-		$dbh = $this->db->connect($journal);
+		$dbh = $this->db->connect(DB_NAME);
 
 		$sth = $dbh->prepare($data['query']);
 		$sth->execute($data['words']);

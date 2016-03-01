@@ -7,114 +7,29 @@ class search extends Controller {
 		parent::__construct();
 	}
 
-	public function index($journal = DEFAULT_JOURNAL) {
-		
-		if(file_exists('application/views/search/' . $journal . '.php')) {
-		    
-		    $this->view('search/' . $journal, array(), $journal);
-		}
-		else {
-	
-		    $this->view('search/index', array(), $journal);
-		}
+	public function index() {
+
+		$this->field();
 	}
 
-	public function doSearch() {
+	public function field() {
 		
-		$data = $this->model->getPostData();
+		$data = $this->model->getGetData();
+		unset($data['url']);
 
 		// Check if any data is posted. For this journal name should be excluded.
-		$checkData = $data;unset($checkData['journal']);
-
-		if($checkData) {
-			
-			// Journal name is passed using a hidden input element in the search form
-			$journal = $data['journal'];
-			unset($data['journal']);
+		if($data) {
 
 			$data = $this->model->preProcessPOST($data);
-			$data = $this->model->searchPatches($data);
 			
-			$query = $this->model->formQuery($data);
-			$result = $this->model->executeQuery($query, $journal);
-			($result) ? $this->view('search/result', $result, $journal) : $this->view('error/noResults', 'search/index/', $journal);
+			$query = $this->model->formGeneralQuery($data, METADATA_TABLE_L2);
+
+			$result = $this->model->executeQuery($query);
+			($result) ? $this->view('search/result', $result) : $this->view('error/noResults', 'search/index/');
 		}
 		else {
 
-			$this->redirect('search/index');
-		}
-	}
-
-	public function allJournals() {
-		
-		$data = $this->model->getPostData();
-		$data = $this->model->preProcessPOST($data);
-		$data = $this->model->searchPatches($data);
-		if($data) {
-
-			$query = $this->model->formQuery($data);
-		
-			$view = new View();
-			$journals = $view->journalFullNames;
-
-			$result = array();
-			foreach ($journals as $journal => $journalName) {
-
-				$journalWiseResult = $this->model->executeQuery($query, $journal);
-				if($journalWiseResult) $result{$journal} = $journalWiseResult;
-			}
-			($result) ? $this->view('search/allJournalsResult', $result) : $this->view('error/noResults', 'page/flat/Journals/Overview/');
-		}
-		else{
-
-			$this->redirect('page/flat/Journals/Overview/');
-		}
-	}
-
-	public function fellow() {
-		
-		$data = $this->model->getPostData();
-		if($data) {
-			
-			$data = $this->model->preProcessPOST($data);
-			$query = $this->model->formGeneralQuery($data, FELLOW_TABLE, ' ORDER BY lname, fname');
-
-			// Search for both bengaluru and bangalore should work
-			$query['words']  = $this->model->handleSpecialCases($query['words']);
-
-			$result = $this->model->executeQuery($query, GENERAL_DB_NAME);
-			if($result) {
-			
-				$result['typeTitle'] = 'Fellowship: Search Results';
-				$result['type'] = 'search';
-			}
-	
-			($result) ? $this->view('listing/fellows', $result) : $this->view('error/noResults', 'page/flat/Initiatives/Fellowship/');
-		}
-		else {
-
-			$this->redirect('page/flat/Initiatives/Fellowship/');
-		}
-	}
-
-	public function associate() {
-		
-		$data = $this->model->getPostData();
-		if($data) {
-			
-			$data = $this->model->preProcessPOST($data);
-			$query = $this->model->formGeneralQuery($data, ASSOCIATE_TABLE);
-
-			// Search for both bengaluru and bangalore should work
-			$query['words']  = $this->model->handleSpecialCases($query['words']);
-
-			$result = $this->model->executeQuery($query, GENERAL_DB_NAME);
-			if($result) $result['typeTitle'] = 'Associateship: Search Results';
-			($result) ? $this->view('listing/associates', $result) : $this->view('error/noResults', 'page/flat/Initiatives/Associateship/');
-		}
-		else {
-
-			$this->redirect('page/flat/Initiatives/Associateship/');
+			$this->view('error/index');
 		}
 	}
 }

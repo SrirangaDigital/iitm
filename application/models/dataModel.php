@@ -29,8 +29,13 @@ class dataModel extends Model {
 			
 			$data['id'] = preg_replace('/.*\/(.*)\.json/', "$1", $photo);
 			$data['albumID'] = preg_replace('/.*\/(.*)\/.*\.json/', "$1", $photo);
-			$data['description'] = $this->getJsonFromFile($photo);
 			
+			$albumDescription = $this->getAlbumDetails($data['albumID']);
+			$albumDescription = $albumDescription->description;
+			$photoDescription = $this->getJsonFromFile($photo);
+			
+			$data['description'] = json_encode(array_merge(json_decode($photoDescription, true), json_decode($albumDescription, true)));
+
 			$this->db->insertData(METADATA_TABLE_L2, $dbh, $data);
 		}
 	}

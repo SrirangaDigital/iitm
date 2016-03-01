@@ -5,7 +5,17 @@
             <ul class="list-inline sub-nav">
                 <li><a href="<?=BASE_URL?>listing/albums">Albums</a></li>
                 <li><a>·</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a>Search</a></li>
+                <li id="searchForm">
+                    <form class="navbar-form" role="search" action="<?=BASE_URL?>search/field/" method="get">
+                        <div class="input-group add-on">
+                            <input type="text" class="form-control" placeholder="Keywords" name="description" id="description">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
             </ul>
         </div>
     </div>

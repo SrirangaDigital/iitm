@@ -38,6 +38,12 @@ $(document).ready(function() {
 			$( '#type' ).val('^$|^honorary$');
     	}
     });
+
+    $( '#search-trigger' ).on('click', function(){
+
+        console.log(this);
+        $( '#searchForm' ).toggleClass( 'hidden' );
+    });
 });
 
 

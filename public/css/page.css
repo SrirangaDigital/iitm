@@ -168,6 +168,7 @@ a.moretag {
 .sub-nav > li{
     padding-top: 30px;
     padding-top: 30px;
+    vertical-align: middle;
 }
 .sub-nav > li > a{
     font-family: "Lato", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -183,7 +184,38 @@ a.moretag {
 .sub-nav > li > a:hover{
     color: #2d2d2d;
 }
-
+.sub-nav .btn-default:hover{
+  background-color: transparent;
+}
+.sub-nav .add-on .input-group-btn > .btn {
+  border-left-width:0;
+  left:-2px;
+}
+/* stop the glowing blue shadow */
+.sub-nav .add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+}
+.sub-nav .navbar-form{
+  margin: 2px 0 0 0;
+}
+.sub-nav .navbar-form input{
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid #5D5D5D;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.sub-nav .navbar-form button, .sub-nav .navbar-form button:hover{
+  border: none;
+  border-bottom: 2px solid #5D5D5D;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 0;
+}
 /*Masonry Layout*/
 
 #posts { margin: 30px auto 0; }
