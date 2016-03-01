@@ -23,9 +23,9 @@ define('DB_PREFIX', 'iitm');
 define('DB_HOST', 'localhost');
 
 // photo will become iitmPHOTO inside
-define('DB_NAME', 'photo');
+define('DB_NAME', 'heritage');
 
-define('iitmPHOTO_USER', 'root');
-define('iitmPHOTO_PASSWORD', 'mysql');
+define('heritage_USER', 'root');
+define('heritage_PASSWORD', 'mysql');
 
 ?>

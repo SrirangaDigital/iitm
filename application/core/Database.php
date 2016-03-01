@@ -85,7 +85,9 @@ class Database extends PDO {
 	}
 
 	public function prependDB($db = DEFAULT_JOURNAL) {
-		return DB_PREFIX . strtoupper($db);
+		
+		// return DB_PREFIX . strtoupper($db);
+		return $db;
 	}
 	
 	public function updateData($table, $dbh, $data) {
