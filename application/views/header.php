@@ -66,17 +66,17 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-primary-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Heritage Centre</a></li>
+                    <li class="active"><a href="#home">Heritage Centre</a></li>
                     <li><a>·</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a>·</a></li>
-                    <li><a href="#">Collection</a></li>
+                    <li><a href="#collection">Collection</a></li>
                     <li><a href="#"><img src="<?=PUBLIC_URL?>images/logo.png" alt="Logo of the Indian Institute of Technology Madras" class="img-circle logo"></a></li>
-                    <li><a href="#">Physical Space</a></li>
+                    <li><a href="#physical">Physical Space</a></li>
                     <li><a>·</a></li>
-                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#contribute">Contribute</a></li>
                     <li><a>·</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

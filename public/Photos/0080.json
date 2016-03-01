@@ -1,0 +1,15 @@
+{
+	"albumID":"0080",
+<<<<<<< HEAD
+	"Title":"Special Convocation, 1991",
+	"Event":"Convocation",
+	"Date":"1991-03-04",
+	"Place":"IIT Madras",
+	"Description":"Conferment of the degree of Doctor of Science (honoris causa) on Dr.Richard von Weizsacker, President, Federal Republic of Germany at the special convocation held on 4-March-1991."
+=======
+	"Title":"Special Convocation",
+	"Event":"Convocation",
+	"Date":"1991-03-04",
+	"Place":"IIT Madras"
+>>>>>>> 3101ab2... Commit No. 41 - A few more albums included
+}

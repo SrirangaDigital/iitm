@@ -18,31 +18,14 @@ $(document).ready(function() {
             }
         }); 
     }
+    
+    $( '.navbar-nav li a').on('click', function(event){
 
-	// Hide all abstracts after pafe load    
-    $( '.journal-article-list-abstract' ).hide();
-    $( ".trigger-abstract" ).click(function() {
-   		
-   		var id = $(this).attr('id').replace('display_', 'abstract_')
-    	$( '#' + id ).slideDown('slow');
-    });
+        event.preventDefault();
 
-    $( '#togglePast' ).change(function() {
+        var jumpLoc = $( $( this ).attr( "href" ) ).offset().top - 105;
 
-    	if($(this).is(":checked")) {
-
-			$( '#type' ).val('.*');
-    	}
-    	else {
-
-			$( '#type' ).val('^$|^honorary$');
-    	}
-    });
-
-    $( '#search-trigger' ).on('click', function(){
-
-        console.log(this);
-        $( '#searchForm' ).toggleClass( 'hidden' );
+        $("html, body").animate({scrollTop: jumpLoc}, 1000);
     });
 });
 

@@ -1,0 +1,15 @@
+{
+	"albumID":"0057",
+<<<<<<< HEAD
+	"Title":"Hindi Workshop",
+	"Event":"Workshop",
+	"Date":"2006-11-00",
+	"Place":"ICSR Hall-1",
+=======
+	"Title":"Welcom to Hindi Workshop",
+	"Event":"Workshop",
+	"Date":"2006-11-00",
+	"Place":"IC&SR Hall 1",
+>>>>>>> 3101ab2... Commit No. 41 - A few more albums included
+	"Description":"Resource Person: Shri N. Kamble, Deputy Director, HTS"
+}
