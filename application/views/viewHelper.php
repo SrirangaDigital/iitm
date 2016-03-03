@@ -2,9 +2,9 @@
 
 class viewHelper extends View {
 
-	public function __construct() {
+    public function __construct() {
 
-	}
+    }
 
     public function getDetailByField($json = '', $firstField = '', $secondField = '') {
 
@@ -71,6 +71,8 @@ class viewHelper extends View {
                 $html .= '<li><strong>' . $key . ':</strong><span class="image-desc-meta">' . $value . '</span></li>' . "\n";
             }
         }
+
+        $html .= '<li>Do you know details about this picture? Mail us at heritage@iitm.ac.in quoting the image ID. Thank you.</li>';
 
         $html .= '</ul>';
 
