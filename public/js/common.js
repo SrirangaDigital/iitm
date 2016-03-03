@@ -35,6 +35,12 @@ $(document).ready(function() {
 
         $("html, body").animate({scrollTop: jumpLoc}, 1000);
     });
+
+    $( '.email-submit' ).on('click', function(event){
+
+        event.preventDefault();
+        alert('This facility will be made available shortly. Till then please write to us as heritage@iitm.ac.in');
+    });
 });
 
 

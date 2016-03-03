@@ -5,6 +5,8 @@
             <ul class="list-inline sub-nav">
                 <li><a href="<?=BASE_URL?>listing/albums">Albums</a></li>
                 <li><a>·</a></li>
+                <li><a href="<?=BASE_URL?>Publications">Publications</a></li>
+                <li><a>·</a></li>
                 <li><a>Search</a></li>
                 <li id="searchForm">
                     <form class="navbar-form" role="search" action="<?=BASE_URL?>search/field/" method="get">

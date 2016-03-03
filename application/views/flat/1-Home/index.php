@@ -5,8 +5,8 @@
                 <img class="img-responsive gap-above" src="<?=PUBLIC_URL?>images/stock/slide1.jpg">
                 <div class="OverlayTextMain">
                     <div class="mainpage">
-                        <h2>IITM Heritage Centre</h2>
-                        <p>The Heritage Centre was formally inaugurated by Dr. Arcot Ramachandran, former Director IIT Madras on 3rd March 2006. The Centre is located on the ground floor of the administration building. The actual idea of a Heritage Centre was mooted in the year 2000 and it has become a reality due to the efforts of the Professor-in-charge Dr. Ajit Kumar Kolar and his team. The Centre will function as a repository of material of heritage value and historical significance of various facets of the Institute.</p>
+                        <h2>IIT Madras Heritage Centre</h2>
+                        <p>The Heritage Centre was formally inaugurated by Dr. Arcot Ramachandran, former Director of IIT Madras on 3rd March 2006. The Centre is located on the ground floor of the administration building. The actual idea of a Heritage Centre was mooted in the year 2000 and it became a reality due to the efforts of Dr. Ajit Kumar Kolar and his team. The Centre is a repository of material of heritage value and historical significance of various facets of the Institute.</p>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                     </a>
                 </li>
                 <li class="stat-elem">
-                    <a href="#">
+                    <a href="<?=BASE_URL?>Publications">
                         <h2><i class="fa fa-book"></i></h2>
                         <p>Publications</p>
                     </a>
@@ -128,18 +128,18 @@
     <div class="row">
         <div class="col-md-4">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ps1.JPG">
-            <h2>Inauguration in 2006</h2>
-            <p>In the Centre, about 500 photographs depicting the early history of IITM are on permanent display on 82 Display Panels with a 14 minute in-house documentary, and a recently added Touch Screen Kiosk.</p>
+            <h2>Centrally located</h2>
+            <p>The Heritage Centre is located in the ground floor of the Administration Block, right next to Gajendra Circle. It occupies the space where the old manual telephone exchange was situated.</p>
         </div>
         <div class="col-md-4">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ps2.JPG">
-            <h2>Renovation underway</h2>
-            <p>In addition, a few interesting photographs were on temporary display. Several other artifacts (IITM Annual Numbers, albums, copies of Campastimes) are also exhibited.</p>
+            <h2>Pictorial account</h2>
+            <p>The display at the Heritage Centre provides a pictorial account of the events that led to the founding of IIT Madras, student life in the early years of the institute, the development of technological and other facilities and visits by distinguished people. The display also encompasses the campus and distinuished alumni.</p>
         </div>
         <div class="col-md-4">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ps3.JPG">
-            <h2>Contribute</h2>
-            <p>Our alumnus, Kumaran Sathasivam (who has co-authored the IITM Coffee-Table Book with Prof. Ajit Kolar, apart from authoring two lovely books on Campus Flora & Fauna) is now looking after the "Heritage Centre", and the "Golden Reunion" batches of '64 & '65 have agreed to fund its renovation.</p>
+            <h2>Variety of artefacts</h2>
+            <p>Also on display are a variety of artefacts including the foundation stone laid at the inauguration of the institute in 1959, a life size oil painting of Prof. B. Sengupto, the first Director of IIT Madras, and a replica of the Inter-IIT Sports Trophy.</p>
         </div>
     </div>
 </div>
@@ -184,9 +184,14 @@
                             <div class="form-group">
                                 <textarea rows="5" class="form-control" id="exampleInputPassword1" placeholder="Your message here"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-default naked">Submit</button>
+                            <button type="submit" class="btn btn-default naked email-submit">Submit</button>
                         </form>
-                        <p><br /><br /><small>© 2016 Indian Institute of Technology Madras.</small></p>
+                        <p>
+                            <br /><br /><small>
+                                © 2016 Indian Institute of Technology Madras.<br />
+                                No image available from this site may be used for commercial purposes without written permission from IIT Madras.
+                            </small><br />
+                        </p>
                     </div>
                 </div>
             </div>

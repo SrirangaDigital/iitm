@@ -1,12 +1,3 @@
-<div class="container">
-    <div class="row">
-        <!-- Column 1 -->
-        <div class="col-md-8 clear-paddings">
-            <div class="col-padded"><!-- inner custom column -->
-<!-- Breadcrumb will be inserted here -->
-<?=$this->printBreadcrumb($path)?>
-                <div class="flat-page">
-<!-- Flat page will be included here -->
 <?php
 
 if(file_exists('application/views/' . $actualPath . '.html')) {
@@ -26,6 +17,3 @@ else{
 }
 
 ?>
-                </div>
-            </div>
-        </div>
