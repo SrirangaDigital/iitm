@@ -19,11 +19,19 @@ $(document).ready(function() {
         }); 
     }
     
+    var hloc = window.location.href;
+    if(hloc.match('#')){
+
+        var jumpLoc = $( '#' + hloc.split("#")[1] ).offset().top - 105;
+
+        $("html, body").animate({scrollTop: jumpLoc}, 1000);
+    }
+
     $( '.navbar-nav li a').on('click', function(event){
 
-        event.preventDefault();
+        // event.preventDefault();
 
-        var jumpLoc = $( $( this ).attr( "href" ) ).offset().top - 105;
+        var jumpLoc = $( '#' + $( this ).attr( "href" ).split('#')[1] ).offset().top - 105;
 
         $("html, body").animate({scrollTop: jumpLoc}, 1000);
     });
