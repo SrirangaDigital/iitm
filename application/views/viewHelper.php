@@ -77,7 +77,6 @@ class viewHelper extends View {
         $html .= '</ul>';
 
         return $html;
-        // <li class="keywords"><strong>Keywords:</strong><span class="image-desc-meta"><a href="#">Zail Singh</a> <a href="#">Convocation</a> <a href="#">Indaresan</a> <a href="#">Raja Ramanna</a> <a href="#">Sheila Kaul</a> <a href="#">Students\'&nbsp;Activities&nbsp;Centre</a></span></li>
     }
 }
 
