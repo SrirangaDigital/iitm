@@ -1,4 +1,5 @@
 .junk/
+public/pdf/
 public/Photos/*.jpg
 public/Photos/*/*.jpg
 public/Photos/*/*/*.jpg

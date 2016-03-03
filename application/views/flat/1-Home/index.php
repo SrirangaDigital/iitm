@@ -127,14 +127,17 @@
     </div>
     <div class="row">
         <div class="col-md-4">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ps1.JPG">
             <h2>Inauguration in 2006</h2>
             <p>In the Centre, about 500 photographs depicting the early history of IITM are on permanent display on 82 Display Panels with a 14 minute in-house documentary, and a recently added Touch Screen Kiosk.</p>
         </div>
         <div class="col-md-4">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ps2.JPG">
             <h2>Renovation underway</h2>
             <p>In addition, a few interesting photographs were on temporary display. Several other artifacts (IITM Annual Numbers, albums, copies of Campastimes) are also exhibited.</p>
         </div>
         <div class="col-md-4">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ps3.JPG">
             <h2>Contribute</h2>
             <p>Our alumnus, Kumaran Sathasivam (who has co-authored the IITM Coffee-Table Book with Prof. Ajit Kolar, apart from authoring two lovely books on Campus Flora & Fauna) is now looking after the "Heritage Centre", and the "Golden Reunion" batches of '64 & '65 have agreed to fund its renovation.</p>
         </div>
@@ -143,7 +146,7 @@
 <div class="container contribute gap-above-large" id="contribute">
     <div class="row">
         <div class="col-md-12">
-            <h1>Contribute Metadata</h1>
+            <h1>Contribute Metadata / Photos</h1>
         </div>
     </div>
     <div class="row gap-above-med">
