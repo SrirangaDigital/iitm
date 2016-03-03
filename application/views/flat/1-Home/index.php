@@ -140,6 +140,32 @@
         </div>
     </div>
 </div>
+<div class="container contribute gap-above-large" id="contribute">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Contribute Metadata</h1>
+        </div>
+    </div>
+    <div class="row gap-above-med">
+        <div class="col-md-9">
+            <div class="image-full-size">
+                <img class="img-responsive" src="<?=PHOTO_URL?>0014/IMG_0473_1.JPG">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="image-desc-full">
+                <ul class="list-unstyled">
+                    <li><strong>id:</strong><span class="image-desc-meta">0014/IMG_0473_1</span></li>
+                    <li><strong>Title:</strong><span class="image-desc-meta">A get together with Shri R. Natarajan, I.A.S., the Director, Staff, and Student of IIT Madrass</span></li>
+                    <li><strong>Event:</strong><span class="image-desc-meta">Tea Party</span></li>
+                    <li><strong>Date:</strong><span class="image-desc-meta">1965-04-01</span></li>
+                    <li><strong>Place:</strong><span class="image-desc-meta">Open Air Theater, IIT Madras</span></li>
+                    <li>Do you know details about this picture? Mail us at heritage@iitm.ac.in quoting the image ID. Thank you.</li></ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container-fluid" id="contact">
     <div class="row first-row">
         <div class="col-md-12 clear-paddings">
