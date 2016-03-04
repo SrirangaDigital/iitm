@@ -108,7 +108,7 @@ class View {
 
 		require_once 'application/views/header.php';
 		require_once 'application/views/flatPageContainer.php';
-		require_once($this->getSideBar($actualPath, $journal));
+		// require_once($this->getSideBar($actualPath, $journal));
 		require_once 'application/views/footer.php';
     }
 
