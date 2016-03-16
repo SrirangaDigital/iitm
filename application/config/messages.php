@@ -2,7 +2,7 @@
 
 // If messgages need to contain variables, put them as :foo and bind them using model::bindVariablesToString() method
 
-define('FB_SUBJECT_PREFIX', '[IASc Website Feedback] ');
+define('FB_SUBJECT_PREFIX', '[IITM Heritage center Website Feedback] ');
 define('FB_SUCCESS_MSG', 'Your feedback has been received and our team will get back to you shortly.');
 define('FB_FAILURE_MSG', 'There is some error in processing your request. Please try again later.');
 

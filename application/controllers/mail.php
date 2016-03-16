@@ -15,7 +15,8 @@ class mail extends Controller {
 	public function send() {
 		
 		$data = $this->model->getPostData();
-		($data) ? $this->postman($data) : $this->redirect('page/flat/About_IASc/Feedback_form/');
+		var_dump($data);
+		// ($data) ? $this->postman($data) : $this->redirect('page/flat/About_IASc/Feedback_form/');
 	}
 
 	public function postman($data) {
@@ -23,8 +24,8 @@ class mail extends Controller {
 		$mail = new PHPMailer();
 
 		$mail->isMail();
-		$mail->setFrom($data['email'], $data['name']);
-		$mail->addReplyTo($data['email'], $data['name']);
+		$mail->setFrom($data['email'], "Anonymous");
+		$mail->addReplyTo($data['email'], "Anonymous");
 		$mail->addAddress(SERVICE_EMAIL, SERVICE_NAME);
 		$mail->Subject = FB_SUBJECT_PREFIX . $data['subject'];
 		$mail->Body = $data['message'];

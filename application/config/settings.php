@@ -20,8 +20,10 @@ define('REQUIRE_EMAIL_VALIDATION', True);//Set these values to True only
 define('REQUIRE_RESET_PASSWORD', True);//if outbound mails can be sent from the server
 
 // mailer settings
-define('SERVICE_EMAIL', 'webadmin@iitm.ac.in');
-define('SERVICE_NAME', 'Indian Institute of Technology Madras');
+// define('SERVICE_EMAIL', 'webadmin@iitm.ac.in');
+// define('SERVICE_NAME', 'Indian Institute of Technology Madras');
+define('SERVICE_EMAIL', 'shiva@srirangadigital.com');
+define('SERVICE_NAME', 'Shivashankar');
 
 
 ?>
