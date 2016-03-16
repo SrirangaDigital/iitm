@@ -102,3 +102,16 @@ a {
 .no-border{
 	border: none !important;
 }
+
+.display-inline{
+	display: inline;
+}
+.align-center{
+	text-align: center;
+}
+.padding-right{
+	padding-right: 1em;
+}
+.padding-left{
+	padding-left: 1em;
+}
