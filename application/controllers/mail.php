@@ -23,7 +23,7 @@ class mail extends Controller {
 		$mail = new PHPMailer();
 
 		if(!$data['g-recaptcha-response']){
-			$this->view('page/prompt', array('msg' => FB_CAPTCHA_MSG));
+			$this->view('error/prompt', array('msg' => FB_CAPTCHA_MSG));
 		}
 		else{
 	
