@@ -1,3 +1,4 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="container-fluid" id="home">
     <div class="row first-row">
         <div class="col-md-12 clear-paddings">
@@ -186,6 +187,9 @@
                             </div>
                             <div class="form-group">
                                 <textarea rows="5" class="form-control" name="message" id="message" placeholder="Your message here" required="required"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6LfYChsTAAAAANpDpt6H-HL7i5zEWRCGM7Ix5YWd"></div>
                             </div>
                             <button type="submit" class="btn btn-default naked email-submit">Submit</button>
                         </form>

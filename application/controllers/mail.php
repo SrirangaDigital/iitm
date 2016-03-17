@@ -22,21 +22,37 @@ class mail extends Controller {
 
 		$mail = new PHPMailer();
 
-		$mail->isMail();
-		$mail->setFrom($data['email'], $data['name']);
-		$mail->addReplyTo($data['email'], $data['name']);
-		$mail->addAddress(SERVICE_EMAIL, SERVICE_NAME);
-		$mail->Subject = FB_SUBJECT_PREFIX;
-		$data['message'] = preg_replace('/&#13;&#10;/', '<br />', $data['message']);
-		$mail->MsgHTML($data['message']);
-
-		if($mail->send()) {
-
-			$this->view('page/prompt', array('msg' => FB_SUCCESS_MSG));
+		if(!$data['g-recaptcha-response']){
+			$this->view('page/prompt', array('msg' => FB_CAPTCHA_MSG));
 		}
-		else {
+		else{
+	
+			$secretKey = "6LfYChsTAAAAAJ_nGb7a13ZlwVcKffXOFKltGmuG";
+	        $ip = $_SERVER['REMOTE_ADDR'];
+	        $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=". $data['g-recaptcha-response'] . "&remoteip=".$ip);
+	        $responseKeys = json_decode($response,true);
 
-			$this->view('error/prompt', array('msg' => FB_FAILURE_MSG));
+	        if(intval($responseKeys["success"])){
+				$mail->isMail();
+				$mail->setFrom($data['email'], $data['name']);
+				$mail->addReplyTo($data['email'], $data['name']);
+				$mail->addAddress(SERVICE_EMAIL, SERVICE_NAME);
+				$mail->Subject = FB_SUBJECT_PREFIX;
+				$data['message'] = preg_replace('/&#13;&#10;/', '<br />', $data['message']);
+				$mail->MsgHTML($data['message']);
+
+				if($mail->send()) {
+
+					$this->view('page/prompt', array('msg' => FB_SUCCESS_MSG));
+				}
+				else {
+
+					$this->view('error/prompt', array('msg' => FB_FAILURE_MSG));
+				}
+			}
+			else{
+					$this->view('error/prompt', array('msg' => FB_CAPTCHA_RESP_MSG));
+			}
 		}
 	}
 }
