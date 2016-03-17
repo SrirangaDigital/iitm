@@ -15,7 +15,7 @@ class mail extends Controller {
 	public function send() {
 		
 		$data = $this->model->getPostData();
-		($data) ? $this->postman($data) : $this->redirect('page/flat/About_IASc/Feedback_form/');
+		($data) ? $this->postman($data) : $this->view('error/prompt', array('msg' => FB_FAILURE_MSG));
 	}
 
 	public function postman($data) {
