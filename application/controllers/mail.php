@@ -27,8 +27,9 @@ class mail extends Controller {
 		$mail->addReplyTo($data['email'], $data['name']);
 		$mail->addAddress(SERVICE_EMAIL, SERVICE_NAME);
 		$mail->Subject = FB_SUBJECT_PREFIX;
-		// $mail->Body = $data['message'];
-		$mail->MsgHTML($data['message']);
+		$mail->ContentType = 'text/plain';		
+		$mail->Body = $data['message'];
+		// $mail->MsgHTML($data['message']);
 
 		if($mail->send()) {
 
