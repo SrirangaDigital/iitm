@@ -5,6 +5,8 @@
 define('FB_SUBJECT_PREFIX', '[IITM Heritage center Website Feedback] ');
 define('FB_SUCCESS_MSG', 'Your feedback has been received and our team will get back to you shortly.');
 define('FB_FAILURE_MSG', 'There is some error in processing your request. Please try again later.');
+define('FB_CAPTCHA_MSG', 'Please check your captcha form.');
+define('FB_CAPTCHA_RESP_MSG', 'Problem in processing your captcha input.');
 
 
 define('REG_VERIFY_SUB', '[IAS] Please verify your email');
