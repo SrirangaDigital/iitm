@@ -15,7 +15,7 @@ class mail extends Controller {
 	public function send() {
 		
 		$data = $this->model->getPostData();
-		($data) ? $this->postman($data) : $this->view('error/prompttest', array('msg' => FB_FAILURE_MSG));
+		($data) ? $this->postman($data) : $this->view('error/prompt', array('msg' => FB_FAILURE_MSG));
 	}
 
 	public function postman($data) {
@@ -51,7 +51,7 @@ class mail extends Controller {
 				}
 			}
 			else{
-					$this->view('error/promptcapres', array('msg' => FB_CAPTCHA_RESP_MSG));
+					$this->view('error/prompt', array('msg' => FB_CAPTCHA_RESP_MSG));
 			}
 		}
 	}
