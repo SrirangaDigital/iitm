@@ -23,8 +23,8 @@ class mail extends Controller {
 		$mail = new PHPMailer();
 
 		$mail->isMail();
-		$mail->setFrom($data['email'], "Anonymous");
-		$mail->addReplyTo($data['email'], "Anonymous");
+		$mail->setFrom($data['email'], $data['name']);
+		$mail->addReplyTo($data['email'], $data['name']);
 		$mail->addAddress(SERVICE_EMAIL, SERVICE_NAME);
 		$mail->Subject = FB_SUBJECT_PREFIX . $data['subject'];
 		$mail->Body = $data['message'];

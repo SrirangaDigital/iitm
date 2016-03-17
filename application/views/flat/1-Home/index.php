@@ -179,10 +179,13 @@
                         <h2>Get in touch</h2><br />
                         <form method="post" action="<?=BASE_URL . 'mail/send'?>">
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name" required="required">
                             </div>
                             <div class="form-group">
-                                <textarea rows="5" class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" class="form-control" name="message" id="message" placeholder="Your message here" required="required"></textarea>
                             </div>
                             <button type="submit" class="btn btn-default naked email-submit">Submit</button>
                         </form>
