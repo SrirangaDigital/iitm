@@ -27,9 +27,8 @@ class mail extends Controller {
 		$mail->addReplyTo($data['email'], $data['name']);
 		$mail->addAddress(SERVICE_EMAIL, SERVICE_NAME);
 		$mail->Subject = FB_SUBJECT_PREFIX;
-		$mail->ContentType = 'text/plain';		
-		$mail->Body = $data['message'];
-		// $mail->MsgHTML($data['message']);
+		$data['message'] = preg_replace('/&#13;&#10;/', '<br />', $data['message']);
+		$mail->MsgHTML($data['message']);
 
 		if($mail->send()) {
 
