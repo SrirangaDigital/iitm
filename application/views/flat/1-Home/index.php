@@ -189,7 +189,7 @@
                                 <textarea rows="5" class="form-control" name="message" id="message" placeholder="Your message here" required="required"></textarea>
                             </div>
                             <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6LfYChsTAAAAANpDpt6H-HL7i5zEWRCGM7Ix5YWd"></div>
+                                <div class="g-recaptcha" data-sitekey="6Le_DBsTAAAAACt5YrgWhjW00CcAF0XYlA30oLPc"></div>
                             </div>
                             <button type="submit" class="btn btn-default naked email-submit">Submit</button>
                         </form>

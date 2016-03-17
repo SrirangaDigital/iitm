@@ -27,7 +27,7 @@ class mail extends Controller {
 		}
 		else{
 	
-			$secretKey = "6LfYChsTAAAAAJ_nGb7a13ZlwVcKffXOFKltGmuG";
+			$secretKey = "6Le_DBsTAAAAAH8rvyqjPXU9jxY5YJxXct76slWv";
 	        $ip = $_SERVER['REMOTE_ADDR'];
 	        $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=". $data['g-recaptcha-response'] . "&remoteip=".$ip);
 	        $responseKeys = json_decode($response,true);
