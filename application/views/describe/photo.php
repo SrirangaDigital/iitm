@@ -25,17 +25,17 @@
 <div class="container">
     <div class="row gap-above-med">
         <div class="col-md-9">
-            <div class="align-center gap-below-med"> 
-                <span class="padding-right"><a href="<?=BASE_URL?>describe/prevPhoto/<?=$data->albumID?>/<?=$data->id?>">&lt; Prev</a></span>
-                <span class="padding-left"><a href="<?=BASE_URL?>describe/nextPhoto/<?=$data->albumID?>/<?=$data->id?>">Next &gt;</a></span>
-            </div>
+            <ul class="pager"> 
+                <li class="previous"><a href="<?=BASE_URL?>describe/prevPhoto/<?=$data->albumID?>/<?=$data->id?>">&lt; Previous</a></li>
+                <li class="next"><a href="<?=BASE_URL?>describe/nextPhoto/<?=$data->albumID?>/<?=$data->id?>">Next &gt;</a></li>
+            </ul>
             <div class="image-full-size">
                 <img class="img-responsive" src="<?=PHOTO_URL . $data->albumID . '/' . $data->id . '.JPG'?>">
             </div>
-            <div class="align-center gap-above-med"> 
-                <span class="padding-right"><a href="<?=BASE_URL?>describe/prevPhoto/<?=$data->albumID?>/<?=$data->id?>">&lt; Prev</a></span>
-                <span class="padding-left"><a href="<?=BASE_URL?>describe/nextPhoto/<?=$data->albumID?>/<?=$data->id?>">Next &gt;</a></span>
-            </div>
+            <ul class="pager"> 
+                <li class="previous"><a href="<?=BASE_URL?>describe/prevPhoto/<?=$data->albumID?>/<?=$data->id?>">&lt; Previous</a></li>
+                <li class="next"><a href="<?=BASE_URL?>describe/nextPhoto/<?=$data->albumID?>/<?=$data->id?>">Next &gt;</a></li>
+            </ul>
         </div>            
         <div class="col-md-3">
             <div class="image-desc-full">
