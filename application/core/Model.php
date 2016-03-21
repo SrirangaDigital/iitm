@@ -112,8 +112,33 @@ class Model {
 		
 		$result = $sth->fetch(PDO::FETCH_OBJ);
 		$dbh = null;
+
 		return $result;
 	}
+
+	public function getNeighbourhood($albumID, $id) {
+
+		$albumPath = PHY_PHOTO_URL . $albumID;
+		$photoPath = $albumPath . "/" . $id . PHOTO_FILE_EXT;
+
+		$files = glob($albumPath . "/*" . PHOTO_FILE_EXT);
+
+		$match = array_search($photoPath, $files);
+
+		if(!($match === False)){
+			
+			$data['prev'] = (isset($files[$match-1])) ? preg_replace("/.*\/(.*)\.JPG/", "$1", $files[$match-1]) : '';
+			$data['next'] = (isset($files[$match+1])) ? preg_replace("/.*\/(.*)\.JPG/", "$1", $files[$match+1]) : '';
+			return $data;
+		}	
+		else{
+
+			return False;
+		}
+
+	}
+
+
 }
 
 ?>

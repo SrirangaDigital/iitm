@@ -25,17 +25,17 @@
 <div class="container">
     <div class="row gap-above-med">
         <div class="col-md-9">
-            <ul class="pager"> 
-                <li class="previous"><a href="<?=BASE_URL?>describe/prevPhoto/<?=$data->albumID?>/<?=$data->id?>">&lt; Previous</a></li>
-                <li class="next"><a href="<?=BASE_URL?>describe/nextPhoto/<?=$data->albumID?>/<?=$data->id?>">Next &gt;</a></li>
+            <ul class="pager">
+                <?php if($data->neighbours['prev']) {?> 
+                <li class="previous"><a href="<?=BASE_URL?>describe/photo/<?=$data->albumID?>/<?=$data->neighbours['prev']?>">&lt; Previous</a></li>
+                <?php } ?>
+                <?php if($data->neighbours['next']) {?> 
+                <li class="next"><a href="<?=BASE_URL?>describe/photo/<?=$data->albumID?>/<?=$data->neighbours['next']?>">Next &gt;</a></li>
+                <?php } ?>
             </ul>
             <div class="image-full-size">
                 <img class="img-responsive" src="<?=PHOTO_URL . $data->albumID . '/' . $data->id . '.JPG'?>">
             </div>
-            <ul class="pager"> 
-                <li class="previous"><a href="<?=BASE_URL?>describe/prevPhoto/<?=$data->albumID?>/<?=$data->id?>">&lt; Previous</a></li>
-                <li class="next"><a href="<?=BASE_URL?>describe/nextPhoto/<?=$data->albumID?>/<?=$data->id?>">Next &gt;</a></li>
-            </ul>
         </div>            
         <div class="col-md-3">
             <div class="image-desc-full">
