@@ -36,9 +36,10 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: jumpLoc}, 1000);
     });
 
-    $("#TOCtoggle").click(function(){
+    $(".TOCtoggle").click(function(){
 
-        $("#toc").slideToggle(1, function(){
+        var divID = "#toc-" + $(this).attr('data-name'); 
+        $(divID).slideToggle(1, function(){
 
             buildMasonry();
            
