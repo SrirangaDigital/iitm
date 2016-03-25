@@ -12,11 +12,11 @@
 .form-group textarea{
 	min-height: 50px;
 	background-color: transparent;
-	color: #FFF;
+	color: #000;
 }
 .form-group input{
 	background-color: transparent;
-	color: #FFF;
+	color: #000;
 }
 .form-control {
 	border: 1px solid #DEDEDE;
