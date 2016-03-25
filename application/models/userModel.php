@@ -9,7 +9,7 @@ class userModel extends Model {
 
 	public function verifyCredentials($credentials) {
 
-		$dbh = $this->db->connect();
+		$dbh = $this->db->connect(DB_NAME);
 
 	    $sth = $dbh->prepare('SELECT * FROM userdetails WHERE email=:email AND password=:password AND isverified=\'1\'');
 		$sth->execute(array('email' => $credentials['lemail'], 'password' => $this->encrypt($credentials['lpassword'])));
@@ -19,7 +19,7 @@ class userModel extends Model {
 
 	public function incrementVisitCount($credentials = array()) {
 
-		$dbh = $this->db->connect();
+		$dbh = $this->db->connect(DB_NAME);
 
 	    $sth = $dbh->prepare('UPDATE userdetails SET visitcount=visitcount+1 WHERE email=:email');
 		$sth->execute(array('email' => $credentials['lemail']));
@@ -28,7 +28,7 @@ class userModel extends Model {
 	public function validateRegistrationData($data) {
 
         // Check if email is already registered
-        $dbh = $this->db->connect();
+        $dbh = $this->db->connect(DB_NAME);
 	    $sth = $dbh->prepare('SELECT COUNT(*) FROM userdetails WHERE email=:email');
 		$sth->execute(array('email' => $data['email']));
 		$result = $sth->fetch(PDO::FETCH_ASSOC);
@@ -66,7 +66,7 @@ class userModel extends Model {
         $data['tstamp'] = time();
         $data['hash'] = sha1($data['pwd'].$data['name'].$data['email'].$data['tstamp']);
         	
-        $dbh = $this->db->connect();
+        $dbh = $this->db->connect(DB_NAME);
 	    $sth = $dbh->prepare('INSERT INTO userdetails VALUES (:name, :email, :profession, :password, :affiliation, \'\', \'0\', \'1\', :hash, :tstamp, \'\')');
 		$success = $sth->execute(array('name' => $data['name'], 'email' => $data['email'], 'profession' => $data['profession'], 'affiliation' => $data['affiliation'], 'password' => $data['pwd'], 'hash' => $data['hash'], 'tstamp' => $data['tstamp']));
 
@@ -75,7 +75,7 @@ class userModel extends Model {
 
  	public function verifyRegistrationLink($hash) {
 
- 		$dbh = $this->db->connect();
+ 		$dbh = $this->db->connect(DB_NAME);
 	    $sth = $dbh->prepare('SELECT *,count(*) FROM userdetails WHERE hash=:verify');
 		$sth->execute(array('verify' => $hash));
 		$result = $sth->fetch(PDO::FETCH_ASSOC);
@@ -106,7 +106,7 @@ class userModel extends Model {
 
 	public function autoVerifyRegistration($data = array()) {
 
- 		$dbh = $this->db->connect();
+ 		$dbh = $this->db->connect(DB_NAME);
         $sth = $dbh->prepare('UPDATE userdetails SET isverified=\'1\' WHERE email=:email and name=:name and hash=:hash');
 		return $sth->execute(array('email' => $data['email'], 'name' => $data['name'], 'hash' => $data['hash']));
 	}
@@ -133,7 +133,7 @@ class userModel extends Model {
 
 	public function getPasswordResetLink($data) {
 
-        $dbh = $this->db->connect();
+        $dbh = $this->db->connect(DB_NAME);
 	    $sth = $dbh->prepare('SELECT password,name,email FROM userdetails WHERE email=:pr_email');
 		$sth->execute(array('pr_email' => $data['pr_email']));
 		$pr_email = $data['pr_email'];
@@ -158,7 +158,7 @@ class userModel extends Model {
 
 	public function verifyPasswordResetLink($reset) {
 
- 	    $dbh = $this->db->connect();
+ 	    $dbh = $this->db->connect(DB_NAME);
 	    $sth = $dbh->prepare('SELECT *,count(*) FROM reset WHERE hash=:reset');
 		$sth->execute(array('reset' => $reset));
 		$data = $sth->fetch(PDO::FETCH_ASSOC);
@@ -191,7 +191,7 @@ class userModel extends Model {
 		//Create new hash
         $newPwd = sha1(SALT.$data['password']);
         
-        $dbh = $this->db->connect();
+        $dbh = $this->db->connect(DB_NAME);
         $sth = $dbh->prepare('SELECT * FROM reset WHERE hash=:hash');
 		$sth->execute(array('hash' => $data['hash']));
 		$data = $sth->fetch(PDO::FETCH_ASSOC);
