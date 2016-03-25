@@ -83,11 +83,11 @@
 <?php
 if(isset($_SESSION['login']))
 {
-    echo ($_SESSION['login'] == 1) ? '<a href="' . PUBLIC_URL . 'user/logout">Logout</a>' : '<a href="' . PUBLIC_URL . 'user/login">Login</a>';
+    echo ($_SESSION['login'] == 1) ? '<a href="' . BASE_URL . 'user/logout">Logout</a>' : '<a href="' . BASE_URL . 'user/login">Login</a>';
 }
 else
 {
-    echo '<a href="' . PUBLIC_URL . 'user/login">Login</a>';
+    echo '<a href="' . BASE_URL . 'user/login">Login</a>';
 }
 ?>
                     </li>
