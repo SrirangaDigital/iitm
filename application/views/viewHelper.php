@@ -78,6 +78,16 @@ class viewHelper extends View {
 
         return $html;
     }
+    public function insertReCaptcha() {
+
+        require_once('vendor/recaptchalib.php');
+
+        $publickey = "6Le_DBsTAAAAACt5YrgWhjW00CcAF0XYlA30oLPc";
+        $privatekey = "6Le_DBsTAAAAAH8rvyqjPXU9jxY5YJxXct76slWv";
+
+        echo recaptcha_get_html($publickey);
+    }
+
 }
 
 ?>
