@@ -38,7 +38,7 @@ class user extends Controller {
 				if($isValid) {
 
 					$this->model->initiateUser($data);
-					(isset($_SESSION['refererUrl'])) ? $this->absoluteRedirect($_SESSION['refererUrl']) : $this->redirect('home');
+					(isset($_SESSION['refererUrl'])) ? $this->absoluteRedirect($_SESSION['refererUrl']) : $this->redirect('#home');
 				}
 				else {
 
