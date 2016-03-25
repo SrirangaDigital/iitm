@@ -38,3 +38,6 @@
 	border-color: #777;
 	background-color: transparent;	
 }
+#pr_email_show {
+    display: none;
+}
