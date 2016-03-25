@@ -15,7 +15,7 @@ class user extends Controller {
 	public function login($errMsg = '') {
 
 		$_SESSION['refererUrl'] = $this->model->getRefererUrl();
-		($this->isLoggedIn()) ? $this->redirect('home') : $this->view('user/login', array('errMsg' => $errMsg));
+		($this->isLoggedIn()) ? $this->redirect('#home') : $this->view('user/login', array('errMsg' => $errMsg));
 	}
 
 	public function logout() {
@@ -38,7 +38,7 @@ class user extends Controller {
 				if($isValid) {
 
 					$this->model->initiateUser($data);
-					(isset($_SESSION['refererUrl'])) ? $this->absoluteRedirect($_SESSION['refererUrl']) : $this->redirect('page/flat/Home');
+					(isset($_SESSION['refererUrl'])) ? $this->absoluteRedirect($_SESSION['refererUrl']) : $this->redirect('#home');
 				}
 				else {
 
