@@ -78,6 +78,19 @@
                     <li><a href="<?=BASE_URL?>#contribute">Contribute</a></li>
                     <li><a>·</a></li>
                     <li><a href="<?=BASE_URL?>#contact">Contact</a></li>
+                    <li><a>·</a></li>
+                    <li>
+<?php
+if(isset($_SESSION['login']))
+{
+    echo ($_SESSION['login'] == 1) ? '<a href="' . PUBLIC_URL . 'user/logout">Logout</a>' : '<a href="' . PUBLIC_URL . 'user/login">Login</a>';
+}
+else
+{
+    echo '<a href="' . PUBLIC_URL . 'user/login">Login</a>';
+}
+?>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
