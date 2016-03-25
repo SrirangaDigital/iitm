@@ -258,6 +258,13 @@ a.moretag {
     #grid > #posts .post { width: 300px; }
     #grid > #posts .post.cs2 { width: 100%; }
     .post img { padding: 0; }
+    .spp-general{
+        margin-top: 70px;
+    }
+    .spp-general .title{
+        margin: 70px 0 40px 0;
+        font-size: 60px;
+    }    
 }
 
 /* Medium devices */
@@ -615,4 +622,24 @@ button.toggle-button{
 .toc .toc-author{
   font-size: 11px;
   font-style: italic;
+}
+
+.spp-general{
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 24px;
+}
+.spp-general .title{
+    margin: 20px 0 20px 0;
+    color: #ea5644;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.spp-general .title span{
+    font-size: 14px;
+    font-weight: 400;
 }
