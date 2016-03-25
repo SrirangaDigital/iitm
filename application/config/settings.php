@@ -11,6 +11,8 @@ define('PHOTO_FILE_EXT', '.JPG');
 // db table names
 define('METADATA_TABLE_L1', 'album');
 define('METADATA_TABLE_L2', 'photo');
+define('METADATA_TABLE_L3', 'userdetails');
+define('METADATA_TABLE_L4', 'reset');
 
 // search settings
 define('SEARCH_OPERAND', 'AND');
