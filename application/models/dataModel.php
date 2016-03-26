@@ -29,7 +29,7 @@ class dataModel extends Model {
 			
 			$data['id'] = preg_replace('/.*\/(.*)\.json/', "$1", $photo);
 			$data['albumID'] = preg_replace('/.*\/(.*)\/.*\.json/', "$1", $photo);
-			
+			$data['id'] = $data['albumID'] . "__" . $data['id'];
 			$albumDescription = $this->getAlbumDetails($data['albumID']);
 			$albumDescription = $albumDescription->description;
 			$photoDescription = $this->getJsonFromFile($photo);
