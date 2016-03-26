@@ -28,6 +28,11 @@ class viewHelper extends View {
         return ($count > 1) ? $count . ' Photographs' : $count . ' Photograph';
     }
 
+    public function getActualID($combinedID) {
+
+        return preg_replace('/^(.*)__/', '', $combinedID);
+    }
+    
     public function includeRandomThumbnail($id = '') {
 
         $photos = glob(PHY_PHOTO_URL . $id . '/thumbs/*.JPG');

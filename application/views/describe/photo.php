@@ -27,14 +27,15 @@
         <div class="col-md-9">
             <ul class="pager">
                 <?php if($data->neighbours['prev']) {?> 
-                <li class="previous"><a href="<?=BASE_URL?>describe/photo/<?=$data->albumID?>/<?=$data->neighbours['prev']?>">&lt; Previous</a></li>
+                <li class="previous"><a href="<?=BASE_URL?>describe/photo/<?=$data->albumID?>/<?=$data->albumID . '__' . $data->neighbours['prev']?>">&lt; Previous</a></li>
                 <?php } ?>
                 <?php if($data->neighbours['next']) {?> 
-                <li class="next"><a href="<?=BASE_URL?>describe/photo/<?=$data->albumID?>/<?=$data->neighbours['next']?>">Next &gt;</a></li>
+                <li class="next"><a href="<?=BASE_URL?>describe/photo/<?=$data->albumID?>/<?=$data->albumID . '__' . $data->neighbours['next']?>">Next &gt;</a></li>
                 <?php } ?>
             </ul>
+            <?php $actualID = $viewHelper->getActualID($data->id); ?>
             <div class="image-full-size">
-                <img class="img-responsive" src="<?=PHOTO_URL . $data->albumID . '/' . $data->id . '.JPG'?>">
+                <img class="img-responsive" src="<?=PHOTO_URL . $data->albumID . '/' . $actualID . '.JPG'?>">
             </div>
         </div>            
         <div class="col-md-3">
