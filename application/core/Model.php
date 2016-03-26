@@ -119,7 +119,10 @@ class Model {
 	public function getNeighbourhood($albumID, $id) {
 
 		$albumPath = PHY_PHOTO_URL . $albumID;
-		$photoPath = $albumPath . "/" . $id . PHOTO_FILE_EXT;
+
+		$actualID = $this->getActualID($id);
+
+		$photoPath = $albumPath . "/" . $actualID . PHOTO_FILE_EXT;
 
 		$files = glob($albumPath . "/*" . PHOTO_FILE_EXT);
 
@@ -138,6 +141,10 @@ class Model {
 
 	}
 
+    public function getActualID($combinedID) {
+
+        return preg_replace('/^(.*)__/', '', $combinedID);
+    }
 
 }
 
