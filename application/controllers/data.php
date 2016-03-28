@@ -22,6 +22,9 @@ class data extends Controller {
 
 		$this->model->db->dropTable(METADATA_TABLE_L2, $dbh);
 		$this->model->db->createTable(METADATA_TABLE_L2, $dbh, METADATA_TABLE_L2_SCHEMA);
+
+		$this->model->db->createTable(METADATA_TABLE_L3, $dbh, METADATA_TABLE_L3_SCHEMA);
+		$this->model->db->createTable(METADATA_TABLE_L4, $dbh, METADATA_TABLE_L4_SCHEMA);
 		
 		//List albums
 		$albums = $this->model->listFiles(PHY_PHOTO_URL, 'json');

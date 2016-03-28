@@ -15,7 +15,7 @@ define('METADATA_TABLE_L2_SCHEMA', 'CREATE TABLE `' . METADATA_TABLE_L2 . '` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4');
 
-define('METADATA_TABLE_L3_SCHEMA', 'CREATE TABLE `' . METADATA_TABLE_L3 . '` (
+define('METADATA_TABLE_L3_SCHEMA', 'CREATE TABLE IF NOT EXISTS `' . METADATA_TABLE_L3 . '` (
 `name` varchar(1000), 
 `email` varchar(100), 
 `profession` varchar(500), 
@@ -29,7 +29,7 @@ define('METADATA_TABLE_L3_SCHEMA', 'CREATE TABLE `' . METADATA_TABLE_L3 . '` (
 `userid` int(6) AUTO_INCREMENT, PRIMARY KEY(userid)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4');
 
-define('METADATA_TABLE_L4_SCHEMA', 'CREATE TABLE `' . METADATA_TABLE_L4 . '` (
+define('METADATA_TABLE_L4_SCHEMA', 'CREATE TABLE IF NOT EXISTS `' . METADATA_TABLE_L4 . '` (
 `hash` varchar(100), 
 `email` varchar(100), 
 `name` varchar(1000), 
