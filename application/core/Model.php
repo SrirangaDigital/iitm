@@ -146,6 +146,36 @@ class Model {
         return preg_replace('/^(.*)__/', '', $combinedID);
     }
 
+    public function getRandomImage($id){
+
+        $photos = glob(PHY_PHOTO_URL . $id . '/thumbs/*.JPG');
+        $randNum = rand(0, sizeof($photos) - 1);
+        $photoSelected = $photos[$randNum];
+
+        return str_replace(PHY_PHOTO_URL, PHOTO_URL, $photoSelected);   	
+    }
+
+    public function getPhotoCount($id = '') {
+
+        $count = sizeof(glob(PHY_PHOTO_URL . $id . '/*.json'));
+        return ($count > 1) ? $count . ' Photographs' : $count . ' Photograph';
+    }
+
+    public function getDetailByField($json = '', $firstField = '', $secondField = '') {
+
+        $data = json_decode($json, true);
+
+        if (isset($data[$firstField])) {
+      
+            return $data[$firstField];
+        }
+        elseif (isset($data[$secondField])) {
+      
+            return $data[$secondField];
+        }
+
+        return '';
+    }
 }
 
 ?>
