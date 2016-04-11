@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="<?=PUBLIC_URL?>css/form.css">
     <link rel="stylesheet" href="<?=PUBLIC_URL?>css/aux.css">
     <link rel="stylesheet" href="<?=PUBLIC_URL?>css/social.css">
-
+    <script type="text/javascript">var base_url = "<?= BASE_URL?>";</script>
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="<?=PUBLIC_URL?>images/favicon.png">
