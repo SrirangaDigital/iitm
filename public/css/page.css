@@ -643,3 +643,18 @@ button.toggle-button{
     font-size: 14px;
     font-weight: 400;
 }
+#albumlist{
+  margin: -10px auto 0px;
+  width:50%;
+  line-height:30px;
+  border-radius:5px;
+  min-height:300px;
+}
+#loader-icon {
+  position: fixed;
+  top: 50%;
+  width:100%;
+  height:100%;
+  text-align:center;
+  display:none;
+}
