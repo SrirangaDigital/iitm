@@ -1,5 +1,6 @@
 <?php
 
+
 class listingModel extends Model {
 
 	public function __construct() {

@@ -1,5 +1,6 @@
 <?php $albumDetails = $data['albumDetails']; unset($data['albumDetails']);?>
 
+
 <div class="container">
     <div class="row first-row">
         <!-- Column 1 -->
