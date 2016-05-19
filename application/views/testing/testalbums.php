@@ -14,14 +14,14 @@ $(document).ready(function(){
             },
             complete: function(){
             $('#loader-icon').hide();
-                var gutter = parseInt(jQuery('.post').css('marginBottom'));
-                var $grid = $('#posts').masonry({
-                    gutter: gutter,
-                    // specify itemSelector so stamps do get laid out
-                    itemSelector: '.post',
-                    columnWidth: '.post'
-                });
-                $grid.masonry();        
+                // var gutter = parseInt(jQuery('.post').css('marginBottom'));
+                // var $grid = $('#posts').masonry({
+                //     gutter: gutter,
+                //     // specify itemSelector so stamps do get laid out
+                //     itemSelector: '.post',
+                //     columnWidth: '.post'
+                // });
+                // $grid.masonry();        
             },
             success: function(data){
                 var gutter = parseInt(jQuery('.post').css('marginBottom'));
@@ -67,6 +67,16 @@ $(document).ready(function(){
                 var pagenum = parseInt($(".pagenum:last").val()) + 1;
                 // alert(base_url+'testing/albums/?page='+pagenum);
                 getresult(base_url+'testing/albums/?page='+pagenum);
+            }
+            else{
+                    var gutter = parseInt(jQuery('.post').css('marginBottom'));
+                    var $grid = $('#posts').masonry({
+                        gutter: gutter,
+                        // specify itemSelector so stamps do get laid out
+                        itemSelector: '.post',
+                        columnWidth: '.post'
+                    });
+                    $grid.masonry();
             }
         }
     });
