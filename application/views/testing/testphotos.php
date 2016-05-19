@@ -20,15 +20,7 @@ $(document).ready(function(){
 				$('#loader-icon').show();
             },
             complete: function(){
-				$('#loader-icon').hide();     
-                // var gutter = parseInt(jQuery('.post').css('marginBottom'));
-                // var $grid = $('#posts').masonry({
-                //     gutter: gutter,
-                //     // specify itemSelector so stamps do get laid out
-                //     itemSelector: '.post',
-                //     columnWidth: '.post'
-                // });
-                // $grid.masonry();
+				$('#loader-icon').hide();
             },
             success: function(data){
 				console.log(data);
