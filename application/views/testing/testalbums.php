@@ -68,16 +68,6 @@ $(document).ready(function(){
                 // alert(base_url+'testing/albums/?page='+pagenum);
                 getresult(base_url+'testing/albums/?page='+pagenum);
             }
-            else{
-                    var gutter = parseInt(jQuery('.post').css('marginBottom'));
-                    var $grid = $('#posts').masonry({
-                        gutter: gutter,
-                        // specify itemSelector so stamps do get laid out
-                        itemSelector: '.post',
-                        columnWidth: '.post'
-                    });
-                    $grid.masonry();
-            }
         }
     });
 });     
