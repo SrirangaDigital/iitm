@@ -21,6 +21,14 @@ $(document).ready(function(){
             },
             complete: function(){
 				$('#loader-icon').hide();     
+                var gutter = parseInt(jQuery('.post').css('marginBottom'));
+                var $grid = $('#posts').masonry({
+                    gutter: gutter,
+                    // specify itemSelector so stamps do get laid out
+                    itemSelector: '.post',
+                    columnWidth: '.post'
+                });
+                $grid.masonry();
             },
             success: function(data){
 				console.log(data);
@@ -56,6 +64,7 @@ $(document).ready(function(){
                 // console.log(obj.hidden);
                 // $("#posts").append(displayString).masonry('appended');
                 $("#hidden-data").append(obj.hidden);
+                $grid.masonry();
             },
             error: function(){console.log("Fail");}             
       });
@@ -67,6 +76,16 @@ $(document).ready(function(){
                 // alert(base_url+'testing/photos/' + albumID + '/?page='+pagenum);
                 getresult(base_url+'testing/photos/' + albumID + '/?page='+pagenum);
             }
+            else{
+                    var gutter = parseInt(jQuery('.post').css('marginBottom'));
+                    var $grid = $('#posts').masonry({
+                        gutter: gutter,
+                        // specify itemSelector so stamps do get laid out
+                        itemSelector: '.post',
+                        columnWidth: '.post'
+                    });
+                    $grid.masonry();
+            }            
         }
     });
 });     
