@@ -13,7 +13,15 @@ $(document).ready(function(){
             $('#loader-icon').show();
             },
             complete: function(){
-            $('#loader-icon').hide();     
+            $('#loader-icon').hide();
+                var gutter = parseInt(jQuery('.post').css('marginBottom'));
+                var $grid = $('#posts').masonry({
+                    gutter: gutter,
+                    // specify itemSelector so stamps do get laid out
+                    itemSelector: '.post',
+                    columnWidth: '.post'
+                });
+                $grid.masonry();        
             },
             success: function(data){
                 var gutter = parseInt(jQuery('.post').css('marginBottom'));
@@ -48,6 +56,7 @@ $(document).ready(function(){
                 // console.log(obj.hidden);
                 // $("#posts").append(displayString).masonry('appended');
                 $("#hidden-data").append(obj.hidden);
+                $grid.masonry();
             },
             error: function(){console.log("Fail");}             
       });
@@ -58,6 +67,16 @@ $(document).ready(function(){
                 var pagenum = parseInt($(".pagenum:last").val()) + 1;
                 // alert(base_url+'testing/albums/?page='+pagenum);
                 getresult(base_url+'testing/albums/?page='+pagenum);
+            }
+            else{
+                    var gutter = parseInt(jQuery('.post').css('marginBottom'));
+                    var $grid = $('#posts').masonry({
+                        gutter: gutter,
+                        // specify itemSelector so stamps do get laid out
+                        itemSelector: '.post',
+                        columnWidth: '.post'
+                    });
+                    $grid.masonry();
             }
         }
     });
