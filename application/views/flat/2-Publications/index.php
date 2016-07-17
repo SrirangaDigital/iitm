@@ -893,6 +893,174 @@
                 <strong>7 Year Special Issue</strong><br />
                 <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/special.pdf" target="_blank">PDF</a>
             </p>
-        </div>               
+        </div>         
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-08-31.jpg">
+            <p class="image-desc">
+                <strong>Hochronicle 1981-08-31</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-08-31.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-09-02.jpg">
+            <p class="image-desc">
+                <strong>Hochronicle 1981-09-02</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-09-02.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-04.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-09-04</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-04.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-13.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-09-13</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-13.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-20.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-09-20</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-20.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-27.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-09-27</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-27.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-10-11.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-10-11</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-11.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-10-18.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-10-18</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-18.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-10-25.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-10-25</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-25.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-11-01.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-11-01</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-11-01.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-11-08.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1981-11-08</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-11-08.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-01-10.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-01-10</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-10.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-01-24.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-01-24</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-24.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-01-31.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-01-31</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-31.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-07.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-02-07</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-07.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-14.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-02-14</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-14.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-21.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-02-21</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-21.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-28.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-02-28</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-28.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-08.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-03-08</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-08.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-15.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-03-15</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-15.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-21.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-03-21</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-21.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-28.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-03-28</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-28.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-04-04.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-04-04</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-04-04.pdf" target="_blank">PDF</a>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-04-11.jpg">
+            <p class="image-desc">
+                <strong>Spectator 1982-04-11</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-04-11.pdf" target="_blank">PDF</a>
+            </p>
+        </div>                
     </div>
 </div>
