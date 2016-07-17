@@ -772,463 +772,540 @@
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_4_4.jpg">
             <p class="image-desc">
                 <strong>Volume 4, No. 4</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/004-04.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/004-04.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>        
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_4_6.jpg">
             <p class="image-desc">
                 <strong>Volume 4, No. 6</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/004-06.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/004-06.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_5_2.jpg">
             <p class="image-desc">
                 <strong>Volume 5, No. 2</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/005-02.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/005-02.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_5_4.jpg">
             <p class="image-desc">
                 <strong>Volume 5, No. 4</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/005-04.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/005-04.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_6_2.jpg">
             <p class="image-desc">
                 <strong>Volume 6, No. 2</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/006-02.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/006-02.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_6_3.jpg">
             <p class="image-desc">
                 <strong>Volume 6, No. 3</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/006-03.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/006-03.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_6_7.jpg">
             <p class="image-desc">
                 <strong>Volume 6, No. 7</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/006-07.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/006-07.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_7_1.jpg">
             <p class="image-desc">
                 <strong>Volume 7, No. 1</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-01.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-01.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_7_2.jpg">
             <p class="image-desc">
                 <strong>Volume 7, No. 2</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-02.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-02.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_7_3.jpg">
             <p class="image-desc">
                 <strong>Volume 7, No. 3</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-03.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-03.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_7_4.jpg">
             <p class="image-desc">
                 <strong>Volume 7, No. 4</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-04.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/007-04.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>        
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_8_1.jpg">
             <p class="image-desc">
                 <strong>Volume 8, No. 1</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-01.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-01.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_8_2.jpg">
             <p class="image-desc">
                 <strong>Volume 8, No. 2</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-02.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-02.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_8_3.jpg">
             <p class="image-desc">
                 <strong>Volume 8, No. 3</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-03.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-03.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_8_4.jpg">
             <p class="image-desc">
                 <strong>Volume 8, No. 4</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-04.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-04.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_8_5.jpg">
             <p class="image-desc">
                 <strong>Volume 8, No. 5</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-05.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-05.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_8_6.jpg">
             <p class="image-desc">
                 <strong>Volume 8, No. 6</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-06.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/008-06.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>               
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_special.jpg">
             <p class="image-desc">
                 <strong>7 Year Special Issue</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/special.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/special.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>         
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-08-31.jpg">
             <p class="image-desc">
                 <strong>Hochronicle 1981-08-31</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-08-31.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-08-31.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-09-02.jpg">
             <p class="image-desc">
                 <strong>Hochronicle 1981-09-02</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-09-02.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-09-02.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-04.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-09-04</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-04.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-04.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-13.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-09-13</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-13.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-13.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-20.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-09-20</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-20.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-20.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-27.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-09-27</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-27.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-27.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-10-11.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-10-11</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-11.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-11.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-10-18.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-10-18</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-18.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-18.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-10-25.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-10-25</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-25.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-10-25.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-11-01.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-11-01</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-11-01.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-11-01.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-11-08.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-11-08</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-11-08.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-11-08.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-01-10.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-01-10</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-10.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-10.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-01-24.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-01-24</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-24.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-24.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-01-31.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-01-31</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-31.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-01-31.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-07.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-02-07</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-07.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-07.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-14.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-02-14</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-14.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-14.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-21.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-02-21</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-21.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-21.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-28.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-02-28</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-28.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-02-28.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-08.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-03-08</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-08.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-08.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-15.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-03-15</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-15.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-15.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-21.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-03-21</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-21.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-21.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-03-28.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-03-28</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-28.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-03-28.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-04-04.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-04-04</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-04-04.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-04-04.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-04-11.jpg">
             <p class="image-desc">
                 <strong>Spectator 1982-04-11</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-04-11.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1982-04-11.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1981-11-09.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1981-11-09</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1981-11-09.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1981-11-09.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-01-12.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-01-12</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-12.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-12.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-01-13.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-01-13</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-13.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-13.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-01-14.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-01-14</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-14.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-14.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-01-15.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-01-15</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-15.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-15.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-01-16.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-01-16</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-16.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-16.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-01-17.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-01-17</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-17.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-17.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-01-18.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-01-18</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-18.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-01-18.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-02-19.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-02-19</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-19.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-19.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-02-20.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-02-20</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-20.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-20.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-02-21.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-02-21</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-21.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-21.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-02-22.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-02-22</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-22.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-22.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-02-23.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-02-23</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-23.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-23.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-02-24.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-02-24</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-24.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-02-24.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-03-19.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-03-19</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-19.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-19.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-03-20.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-03-20</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-20.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-20.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-03-23.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-03-23</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-23.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-23.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-03-24.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-03-24</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-24.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-24.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-03-25.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-03-25</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-25.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-25.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-03-26.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-03-26</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-26.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-03-26.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_Special_1982-04-15.jpg">
             <p class="image-desc">
                 <strong>Spectator Special 1982-04-15</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-04-15.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_Special_1982-04-15.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_spectator-inter-iit.jpg">
             <p class="image-desc">
                 <strong>Spectator spectator inter iit</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_spectator-inter-iit.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_spectator-inter-iit.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_spectator-misc1.jpg">
             <p class="image-desc">
                 <strong>Spectator spectator miscellaneous</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_spectator-misc1.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_spectator-misc1.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
         <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_spectator-misc2.jpg">
             <p class="image-desc">
                 <strong>Spectator spectator miscellaneous</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_spectator-misc2.pdf" target="_blank">PDF</a>
+                <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_spectator-misc2.pdf" target="_blank">PDF</a></strong>
             </p>
-        </div>                        
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-02-02.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-02-02</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-02-02.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-02-08.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-02-08</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-02-08.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-02-15.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-02-15</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-02-15.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-02-22.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-02-22</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-02-22.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-02-28.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-02-28</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-02-28.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-03-07.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-03-07</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-03-07.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-03-14.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-03-14</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-03-14.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-03-21.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-03-21</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-03-21.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-03-29.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-03-29</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-03-29.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-04-04.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-04-04</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-04-04.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-04-11.jpg">
+            <p class="image-desc">
+                <strong>The Rag Mandak 1981-04-11</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-04-11.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>                                
     </div>
 </div>
