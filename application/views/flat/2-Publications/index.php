@@ -895,20 +895,6 @@
             </p>
         </div>         
         <div class="post">
-            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-08-31.jpg">
-            <p class="image-desc">
-                <strong>Hochronicle 1981-08-31</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-08-31.pdf" target="_blank">PDF</a></strong>
-            </p>
-        </div>
-        <div class="post">
-            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-09-02.jpg">
-            <p class="image-desc">
-                <strong>Hochronicle 1981-09-02</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-09-02.pdf" target="_blank">PDF</a></strong>
-            </p>
-        </div>
-        <div class="post">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-04.jpg">
             <p class="image-desc">
                 <strong>Spectator 1981-09-04</strong><br />
@@ -1307,5 +1293,23 @@
                 <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-04-11.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>                                
+        <div class="post">
+            <a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-08-31.pdf" target="_blank">           
+                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-08-31.jpg">
+            </a>
+            <p class="image-desc">
+                <strong>Hochronicle - Issue No. 5 (31 Aug, 1981)</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-08-31.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
+        <div class="post">
+            <a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-09-02.pdf" target="_blank">
+                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-09-02.jpg">
+            </a>    
+            <p class="image-desc">
+                <strong>Hochronicle  - Issue No. 7 (2 Sep, 1981)</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-09-02.pdf" target="_blank">PDF</a></strong>
+            </p>
+        </div>
     </div>
 </div>
