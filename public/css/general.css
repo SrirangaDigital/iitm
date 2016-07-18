@@ -115,3 +115,8 @@ a {
 .padding-left{
 	padding-left: 1em;
 }
+.icon-large{
+	font-size:300px;
+	color: #DDD;
+	text-align: center;
+}
