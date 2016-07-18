@@ -111,9 +111,9 @@
                     </a>
                 </li>
                 <li class="stat-elem">
-                    <a href="#">
-                        <h2><i class="fa fa-trophy"></i></h2>
-                        <p>Artefacts</p>
+                    <a href="<?=BASE_URL?>Oral_History">
+                        <h2><i class="fa fa-file-audio-o"></i></h2>
+                        <p>Oral History</p>
                     </a>
                 </li>
             </ul>
