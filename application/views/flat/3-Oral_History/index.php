@@ -25,17 +25,25 @@
 <div id="grid" class="container-fluid">
     <div id="posts">
         <div class="post">
-            <i class="fa fa-file-audio-o icon-large"></i>
-            <p class="image-desc">
+			<a href="<?=PUBLIC_URL?>multimedia/Prof_Santhakumar_11_06_2016.mp3" target="_blank">
+				<div class="icon-large">	
+					<i class="fa fa-volume-up"></i>
+				</div>
+			</a>	
+			<p class="image-desc">
                 <strong>Prof. Santhakumar Interview<br /> (11 Jun, 2016)</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof_Santhakumar_11_06_2016.mp3" download="Prof_Santhakumar_11_06_2016.mp3">Download MP3</a></strong>  
+                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof_Santhakumar_11_06_2016.mp3" target="_blank">Listen to the Audio</a></strong>  
             </p>
         </div>   
         <div class="post">
-            <i class="fa fa-file-audio-o icon-large"></i>
+			<a href="<?=PUBLIC_URL?>multimedia/Prof_Subramanian_interview.mp3" target="_blank">
+				<div class="icon-large">
+					<i class="fa fa-volume-up icon-large"></i>
+				</div>
+			</a>	
             <p class="image-desc">
                 <strong>Prof. Subramanian Interview</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof_Subramanian_interview.mp3" download="Prof_Subramanian_interview.mp3">Download MP3</a></strong>  
+                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof_Subramanian_interview.mp3" target="_blank">Listen to the Audio</a></strong>  
             </p>
         </div>  
     
