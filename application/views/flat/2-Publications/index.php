@@ -24,7 +24,19 @@
 </div>
 <div id="grid" class="container-fluid">
     <div id="posts">
-        <div class="post">
+         <div class="post no-border">
+            <div class="image-desc-full-alt">
+                <ul class="list-unstyled">
+                    <li><strong>Periodicals by IIT, Madras</strong></li>
+                    <li><span class="image-desc-meta"><a href="#AnnualNumber">Annual Number</a></span></li>
+                    <li><span class="image-desc-meta"><a href="#campastimes">Campastimes</a></span></li>
+                    <li><span class="image-desc-meta"><a href="#spectator">Spectator</a></span></li>
+                    <li><span class="image-desc-meta"><a href="#the_rag_mandak">The Rag Mandak</a></span></li>
+                    <li><span class="image-desc-meta"><a href="#hochronicle">Hochronicle</a></span></li>
+                </ul>            
+            </div>
+        </div>
+        <div class="post" id="AnnualNumber">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/an-003.jpg">
             <p class="image-desc">
                 <strong>Annual Number 3</strong><br />
@@ -768,7 +780,7 @@
                 </div>
             </p>
         </div>
-        <div class="post">
+        <div class="post" id="campastimes">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/ct_4_4.jpg">
             <p class="image-desc">
                 <strong>Volume 4, No. 4</strong><br />
@@ -894,7 +906,7 @@
                 <strong><a href="<?=PUBLIC_URL?>pdf/campastimes/special.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>         
-        <div class="post">
+        <div class="post" id="spectator">
             <a href="<?=PUBLIC_URL?>pdf/Spectator/Spectator_1981-09-04.pdf" target="_blank">
                 <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1981-09-04.jpg">
             </a>
@@ -1308,7 +1320,7 @@
                 <strong><a href="<?=PUBLIC_URL?>pdf/Spectator_Special/Spectator_spectator-misc2.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>
-        <div class="post">
+        <div class="post" id="the_rag_mandak">
             <a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-02-02.pdf" target="_blank">
                 <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-02-02.jpg">
             </a>
@@ -1407,7 +1419,7 @@
                 <strong><a href="<?=PUBLIC_URL?>pdf/The_Rag_Mandak/The_Rag_Mandak_1981-04-11.pdf" target="_blank">PDF</a></strong>
             </p>
         </div>                                
-        <div class="post">
+        <div class="post" id="hochronicle">
             <a href="<?=PUBLIC_URL?>pdf/Hochronicle/Hochronicle_1981-08-31.pdf" target="_blank">           
                 <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-08-31.jpg">
             </a>

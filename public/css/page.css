@@ -326,6 +326,38 @@ a.moretag {
     border-bottom: none;
 }
 
+/** image-desc-full altered for publications and other pages **/
+
+.image-desc-full-alt li{
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
+    border-bottom: 1px solid #ededed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    color: #5d5d5d;
+}
+.image-desc-full-alt li a{
+    color: #000;
+}
+.image-desc-full-alt li a:hover{
+    border-bottom: 1px dotted #000;
+}
+.image-desc-full-alt li:first-child {
+    padding-top: 0 !important;
+}
+.image-desc-full-alt li strong{
+    float: left;
+    text-transform: capitalize;
+}
+
+
 /*Image overlays*/
 .fixOverlayDiv{
     position: relative;
