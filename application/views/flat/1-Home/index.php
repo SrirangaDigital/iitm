@@ -205,3 +205,5 @@
         </div>
     </div>
 </div>
+
+    <script type="text/javascript" src="<?=PUBLIC_URL?>js/common.js" async></script>
