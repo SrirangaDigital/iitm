@@ -6,7 +6,7 @@
         <!-- Column 1 -->
         <div class="col-md-12 text-center">
             <ul class="list-inline sub-nav">
-                <li><a href="<?=BASE_URL?>listing/albums">Albums</a></li>
+                <li><a href="<?=BASE_URL?>listing/collections">Photo Collection</a></li>
                 <li><a>·</a></li>
                 <li><a href="<?=BASE_URL?>Publications">Publications</a></li>
                 <li><a>·</a></li>
@@ -30,6 +30,13 @@
         <div class="post no-border">
             <div class="image-desc-full">
                 <?=$viewHelper->displayFieldData($albumDetails->description)?>
+                <?php if(isset($_SESSION['login'])) {?>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="<?=BASE_URL?>edit/album/<?=$data[0]->albumID?>" class="btn btn-primary" role="button">Contribute</a>
+                    </li>    
+                </ul>    
+                <?php } ?>                
             </div>
         </div>
 <?php foreach ($data as $row) { ?>

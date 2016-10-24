@@ -6,6 +6,20 @@ class viewHelper extends View {
 
     }
 
+    public function getDetailByFieldForAlbum($id = '', $firstField = '') {
+
+        $albumJsonFile = PHY_PHOTO_URL . $id . '.json';
+        $albumJsonData = file_get_contents($albumJsonFile);
+        $data = json_decode($albumJsonData,true);            
+    
+        if (isset($data[$firstField])) {
+      
+            return $data[$firstField];
+        }
+
+        return '';
+    }
+
     public function getDetailByField($json = '', $firstField = '', $secondField = '') {
 
         $data = json_decode($json, true);
@@ -59,21 +73,24 @@ class viewHelper extends View {
 
         foreach ($data as $key => $value) {
 
-            if(preg_match('/keyword/i', $key)) {
+        if($value != ""){
 
-                $html .= '<li class="keywords"><strong>' . $key . ':</strong><span class="image-desc-meta">';
-                
-                $keywords = explode(',', $value);
-                foreach ($keywords as $keyword) {
-   
-                    $html .= '<a href="' . BASE_URL . 'search/field/?description=' . $keyword . '">' . str_replace(' ', '&nbsp;', $keyword) . '</a> ';
+                if(preg_match('/keyword/i', $key)) {
+
+                    $html .= '<li class="keywords"><strong>' . $key . ':</strong><span class="image-desc-meta">';
+                    
+                    $keywords = explode(',', $value);
+                    foreach ($keywords as $keyword) {
+       
+                        $html .= '<a href="' . BASE_URL . 'search/field/?description=' . $keyword . '">' . str_replace(' ', '&nbsp;', $keyword) . '</a> ';
+                    }
+                    
+                    $html .= '</span></li>' . "\n";
                 }
-                
-                $html .= '</span></li>' . "\n";
-            }
-            else{
+                else{
 
-                $html .= '<li><strong>' . $key . ':</strong><span class="image-desc-meta">' . $value . '</span></li>' . "\n";
+                    $html .= '<li><strong>' . $key . ':</strong><span class="image-desc-meta">' . $value . '</span></li>' . "\n";
+                }
             }
         }
 
@@ -91,6 +108,35 @@ class viewHelper extends View {
         $privatekey = "6Le_DBsTAAAAAH8rvyqjPXU9jxY5YJxXct76slWv";
 
         echo recaptcha_get_html($publickey);
+    }
+
+    public function displayDataInForm($json, $auxJson='') {
+
+        $data = json_decode($json, true);
+        
+        if ($auxJson) $data = array_merge($data, json_decode($auxJson, true));
+        
+        $count = 0;
+        $formgroup = 0;
+
+        foreach ($data as $key => $value) {
+            // echo "Key: $key; Value: $value\n";
+            $disable = (($key == 'id') || ($key == 'albumID'))? 'readonly' : '';
+            echo '<div class="form-group" id="frmgroup' . $formgroup . '">' . "\n";
+            echo '<input type="text" class="form-control" name="id'. $count . '[]"  value="' . $key . '"' . $disable  . ' />&nbsp;' . "\n";
+            echo '<input type="text" class="form-control" name="id'. $count . '[]"  value="' . $value . '"' . $disable . ' />' . "\n";
+            if($disable != "readonly"){
+                echo '<input type="button"  onclick="removeUpdateDataElement(\'frmgroup'. $formgroup .'\')" value="Remove" />' . "\n";                
+            }
+            echo '</div>' . "\n";
+            $count++;
+            $formgroup++;
+        }
+
+        echo '<div id="keyvalues">' . "\n";
+        echo '</div>' . "\n";
+        echo '<input type="button" id="keyvaluebtn" onclick="addnewfields(keyvaluebtn)" value="Add New Fields" />' . "\n";
+        echo '<input type="submit" id="submit" value="Update Data" />' . "\n";
     }
 
 }

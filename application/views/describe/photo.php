@@ -3,7 +3,7 @@
         <!-- Column 1 -->
         <div class="col-md-12 text-center">
             <ul class="list-inline sub-nav">
-                <li><a href="<?=BASE_URL?>listing/albums">Albums</a></li>
+                <li><a href="<?=BASE_URL?>listing/collections">Photo Collection</a></li>
                 <li><a>·</a></li>
                 <li><a href="<?=BASE_URL?>Publications">Publications</a></li>
                 <li><a>·</a></li>
@@ -42,6 +42,11 @@
             <div class="image-desc-full">
                 <ul class="list-unstyled">
                     <?=$viewHelper->displayFieldData($data->description)?>
+                    <li>
+                        <?php if(isset($_SESSION['login'])) {?>
+                            <a href="<?=BASE_URL?>edit/photo/<?=$data->albumID?>/<?=$viewHelper->getActualID($data->id)?>" class="btn btn-primary" role="button">Contribute</a>
+                        <?php }?>    
+                    </li>
                 </ul>
             </div>
         </div>
