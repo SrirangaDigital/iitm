@@ -17,6 +17,12 @@ class listing extends Controller {
 
 		$data = $this->model->listAlbums();
 		($data) ? $this->view('listing/albums', $data) : $this->view('error/index');
+	}	
+
+	public function collections() {
+
+		$data = $this->model->listCollections();
+		($data) ? $this->view('listing/collections', $data) : $this->view('error/index');
 	}
 
 	public function photos($album = DEFAULT_ALBUM) {
