@@ -14,6 +14,7 @@ define('METADATA_TABLE_L1', 'album');
 define('METADATA_TABLE_L2', 'photo');
 define('METADATA_TABLE_L3', 'userdetails');
 define('METADATA_TABLE_L4', 'reset');
+define('METADATA_TABLE_L5', 'moderate_details');
 
 // search settings
 define('SEARCH_OPERAND', 'AND');
@@ -28,6 +29,9 @@ define('REQUIRE_RESET_PASSWORD', True);//if outbound mails can be sent from the 
 // define('SERVICE_NAME', 'Indian Institute of Technology Madras');
 define('SERVICE_EMAIL', 'shiva@srirangadigital.com');
 define('SERVICE_NAME', 'Shivashankar');
+define('ADMIN_EMAIL', 'shivably04sdst@gmail.com');
+define('ADMIN_NAME', 'Shiva Kumar');
+
 
 
 ?>
