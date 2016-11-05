@@ -116,6 +116,20 @@ class userModel extends Model {
 		$this->incrementVisitCount($credentials);
 		$_SESSION['email'] = $credentials['lemail'];
         $_SESSION['login'] = 1;
+        $_SESSION['name'] =  $this->getUsername($_SESSION['email']);
+	}
+
+	public function getUsername($email = ''){
+
+ 		$dbh = $this->db->connect(DB_NAME);
+	    $sth = $dbh->prepare('SELECT name FROM userdetails WHERE email=:email');
+		$sth->execute(array('email' => $email));
+		$result = $sth->fetch(PDO::FETCH_ASSOC);
+		if (isset($result['name'])) {
+			return $result['name'];
+		}
+
+		return 'Anonymous User';
 	}
 
 	public function destroyUser() {
