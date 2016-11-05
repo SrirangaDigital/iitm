@@ -45,6 +45,11 @@ class viewHelper extends View {
     public function getActualID($combinedID) {
 
         return preg_replace('/^(.*)__/', '', $combinedID);
+    }    
+
+    public function getAlbumID($combinedID) {
+
+        return preg_replace('/^(.*)__(.*)/', '\1', $combinedID);
     }
     
     public function includeRandomThumbnail($id = '') {
