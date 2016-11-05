@@ -11,6 +11,12 @@ class home extends Controller {
 		
 		$this->view('flat/Home/');
 	}
+	
+	public function flat() {
+		
+		$this->view('flat/Home/');
+	}
+
 }
 
 ?>
