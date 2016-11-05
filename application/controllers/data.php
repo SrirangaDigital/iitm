@@ -258,7 +258,7 @@ class data extends Controller {
 		}		
 		if($files['D']){ 
 				$this->model->gitProcess($repo, $files['D'], 'rm', GIT_DEL_MSG, $user);
-				array_push($statusMsg, ' Deleted of JSON for Albums / Photos are completed');
+				array_push($statusMsg, ' Deletion of JSON for Albums / Photos are completed');
 		}	
 		
 		$repo->run('push ' . GIT_REMOTE . ' master');
