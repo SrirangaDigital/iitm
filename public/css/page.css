@@ -690,3 +690,10 @@ button.toggle-button{
   text-align:center;
   display:none;
 }
+.imgresize img{
+  width: 40%;
+}
+
+.image-align-center img{
+  margin: auto auto;
+}
