@@ -154,6 +154,41 @@ class Database extends PDO {
 		}
 			
 	}
+
+	public function updatePhotoDescription($photoID,$albumID,$combinedDescription,$dbh){
+
+			$sth = $dbh->prepare('UPDATE ' . METADATA_TABLE_L2 . ' SET 
+			description=:description where id=:id AND albumID=:albumID');
+
+			$sth->bindParam(':id', $photoID);
+			$sth->bindParam(':albumID', $albumID);
+			$sth->bindParam(':description', $combinedDescription);
+
+			$sth->execute();
+	}
+
+	public function updateAlbumDescription($albumID,$albumDescription,$dbh){
+		
+			$sth = $dbh->prepare('UPDATE ' . METADATA_TABLE_L1 . ' SET 
+			description=:description where albumID=:albumID');
+
+			$sth->bindParam(':albumID', $albumID);
+			$sth->bindParam(':description', $albumDescription);
+
+			$sth->execute();
+
+	}
+
+	public function deleteDataFromModeration($id,$moderationid,$dbh){
+
+			$sth = $dbh->prepare('DELETE FROM ' . METADATA_TABLE_L5 . ' WHERE 
+			id=:id AND moderationid=:moderationid');
+
+			$sth->bindParam(':id', $id);
+			$sth->bindParam(':moderationid', $moderationid);
+
+			$sth->execute();		
+	}
 	
 }
 
