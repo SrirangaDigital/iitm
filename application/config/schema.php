@@ -38,6 +38,16 @@ define('METADATA_TABLE_L4_SCHEMA', 'CREATE TABLE IF NOT EXISTS `' . METADATA_TAB
 `resetid` int(6) AUTO_INCREMENT, PRIMARY KEY (resetid)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4');
 
+define('METADATA_TABLE_L5_SCHEMA', 'CREATE TABLE IF NOT EXISTS `' . METADATA_TABLE_L5 . '` (
+`id` varchar(50), 
+`type` ENUM(\'photo\', \'album\'), 
+`description` text DEFAULT NULL,
+`timestamp` varchar(20), 
+`email` varchar(100), 
+`mod_flag` int(5) DEFAULT 0, 
+`moderationid` int(20) AUTO_INCREMENT, PRIMARY KEY (moderationid)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4');
+
 define('CHAR_ENCODING_SCHEMA', 'SET NAMES utf8mb4');
 
 ?>
