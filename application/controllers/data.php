@@ -124,9 +124,16 @@ class data extends Controller {
 			// echo "Photo data is updated<br />";
 			$this->updatePhotoDetails($photoID,$albumID,$moderationid,$fileContents);
 
-			// echo "Database is updated";
 			// echo '<p><a href="'. $photoUrl .'">Click here to see the updated photo details</a></p>';
-			// $this->updateRepo();
+
+			//Updating a repository
+			$this->updateRepo();
+			array_push($_SESSION['statusMsg'],"Changes have been updated in github");
+
+			//mail has to be sent to a person who has done changes to this JSON
+			//saying changes has been accepted and he can see it.
+			//array_push($_SESSION['statusMsg'],"Mail has been sent to contributor");
+			$this->view('data/taskCompleted', $_SESSION['statusMsg'], '');
 		}
 		else
 		{
@@ -153,15 +160,6 @@ class data extends Controller {
 			$this->model->db->deleteDataFromModeration($photoID,$moderationid,$dbh);
 
 			array_push($_SESSION['statusMsg'],"Photo data is deleted from Moderation table");
-
-			//mail has to be sent to a person who has done changes to this JSON
-			//saying changes has been accepted and he can see it.
-			//array_push($_SESSION['statusMsg'],"Mail has been sent to contributor");
-
-			//Updating a repository
-			//array_push($_SESSION['statusMsg'],"Changes have been updated in github");
-
-			$this->view('data/taskCompleted', $_SESSION['statusMsg'], '');
 	}
 
 	public function updateAlbumJson($albumID,$moderationid) {
@@ -190,7 +188,17 @@ class data extends Controller {
 
 			array_push($_SESSION['statusMsg'],"Modified data written to Json " . $albumID . ".json" . " file");
 			$this->updateAlbumDetails($albumID,$moderationid,$fileContents);
-			// $this->updateRepo();
+	
+			$this->updateRepo();
+			//Updating a repository
+			array_push($_SESSION['statusMsg'],"Changes have been updated in github");
+
+			//mail has to be sent to a person who has done changes to this JSON
+			//saying changes has been accepted and he can see it.
+			//array_push($_SESSION['statusMsg'],"Mail has been sent to contributor");
+
+
+			$this->view('data/taskCompleted', $_SESSION['statusMsg'], '');
 		}
 		else
 		{
@@ -219,15 +227,6 @@ class data extends Controller {
 			$this->model->db->deleteDataFromModeration($albumID,$moderationid,$dbh);
 
 			array_push($_SESSION['statusMsg'],"Album data is deleted from Moderation table");
-
-			//mail has to be sent to a person who has done changes to this JSON
-			//saying changes has been accepted and he can see it.
-			//array_push($_SESSION['statusMsg'],"Mail has been sent to contributor");
-
-			//Updating a repository
-			//array_push($_SESSION['statusMsg'],"Changes have been updated in github");
-
-			$this->view('data/taskCompleted', $_SESSION['statusMsg'], '');
 	}
 
 	private function updateRepo(){
@@ -238,34 +237,32 @@ class data extends Controller {
 
 		// Before all operations, a git pull is done to sync local and remote repos.
 		$repo->run('pull ' . GIT_REMOTE . ' master');
-		array_push($statusMsg, 'Repo synced with remote');
+		// array_push($statusMsg, 'Repo synced with remote');
 
 		$files = $this->model->getChangesFromGit($repo);
-		array_push($statusMsg, 'Files to be updated listed');
+		// array_push($statusMsg, 'Files to be updated listed');
 
 		$user['email'] = $_SESSION['email'];
-		$user['password'] = $_SESSION['password'];
 		$split = explode('@', $_SESSION['email']);
 		$user['name'] = $split[0];
 
 		if($files['A']){ 
 				$this->model->gitProcess($repo, $files['A'], 'add', GIT_ADD_MSG, $user);
-				array_push($statusMsg, ' Addition of JSON for Albums and Photos are completed');
+				// array_push($statusMsg, ' Addition of JSON for Albums and Photos are completed');
 		}	
 		if($files['M']){ 
 				$this->model->gitProcess($repo, $files['M'], 'add', GIT_MOD_MSG, $user);
-				array_push($statusMsg, ' Modification of JSON for Albums and Photos are completed');
+				// array_push($statusMsg, ' Modification of JSON for Albums and Photos are completed');
 		}		
 		if($files['D']){ 
 				$this->model->gitProcess($repo, $files['D'], 'rm', GIT_DEL_MSG, $user);
-				array_push($statusMsg, ' Deletion of JSON for Albums / Photos are completed');
+				// array_push($statusMsg, ' Deletion of JSON for Albums / Photos are completed');
 		}	
 		
 		$repo->run('push ' . GIT_REMOTE . ' master');
 		
-		array_push($statusMsg, 'Local changes pushed to remote');
+		// array_push($statusMsg, 'Local changes pushed to remote');
 
-		$this->view('data/taskCompleted', $statusMsg, '');
 	}
 
 	public function sumne($albumID){
