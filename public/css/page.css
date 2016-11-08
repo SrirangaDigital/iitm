@@ -697,3 +697,7 @@ button.toggle-button{
 .image-align-center img{
   margin: auto auto;
 }
+
+.feedback-title{
+  font-size: 1.4em;
+}
