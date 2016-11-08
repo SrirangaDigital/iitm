@@ -8,3 +8,4 @@ public/Photos/*.JPG
 public/Photos/*/*.JPG
 public/Photos/*/*/*.JPG
 public/junk/
+junk/
