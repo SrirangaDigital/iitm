@@ -26,7 +26,7 @@
 <div class="container">
     <div class="row gap-above-med">
         <div class="col-md-12">
-            <p class="journal-article-title"><?=$data?></p>
+            <p class="feedback-title"><?=$data?></p>
         </div>
     </div>
 </div>

@@ -33,7 +33,7 @@
                 <li><?=$row?></li>
             <?php } ?>
             </ul>
-            <p class="journal-article-subtitle">Task completed</p>            
+            <p class="feedback-title">Task completed</p>            
         </div>
     </div>
 </div>

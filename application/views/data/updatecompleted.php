@@ -26,9 +26,21 @@
 <div class="container">
     <div class="row gap-above-med">
         <div class="col-md-12">
-<!--             <p class="journal-article-title">Details have been mailed to Admin</p>
-            <p class="journal-article-subtitle">Awaiting moderation from Admin</p>
- -->            <p class="journal-article-title"><?=JSN_UPDATE_SUCCESS_MSG?></p>
+            <p class="feedback-title"><?=JSN_UPDATE_SUCCESS_MSG?></p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </div>
 </div>
