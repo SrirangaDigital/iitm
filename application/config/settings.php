@@ -29,8 +29,8 @@ define('REQUIRE_RESET_PASSWORD', True);//if outbound mails can be sent from the 
 // define('SERVICE_NAME', 'Indian Institute of Technology Madras');
 define('SERVICE_EMAIL', 'shiva@srirangadigital.com');
 define('SERVICE_NAME', 'Shivashankar');
-define('ADMIN_EMAIL', 'shivably04sdst@gmail.com');
-define('ADMIN_NAME', 'Shiva Kumar');
+define('ADMIN_EMAIL', 'arjun.kashyap@srirangadigital.com');
+define('ADMIN_NAME', 'Arjun Kashyap');
 
 
 
