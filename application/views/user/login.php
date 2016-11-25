@@ -26,7 +26,7 @@
                 </div>
                 <div class="form-group" id="pr_email_show">
                     <label class="red" for="pr_email">Enter your email address</label>
-                    <input type="email" class="form-control" id="pr_email" name="pr_email" placeholder="Enter your email address">
+                    <input type="email" class="form-control" id="pr_email" name="pr_email" value="" placeholder="Enter your email address">
                 </div>
                 <?php if(REQUIRE_RESET_PASSWORD) { ?>
                 <div class="form-group">
