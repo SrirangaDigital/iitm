@@ -41,7 +41,7 @@ define('GIT_MOD_MSG', 'Json for Albums / Photos modifed');
 define('GIT_DEL_MSG', 'Json for Albums / Photos deleted');
 
 define('JSN_UPDATE_SUB', '[IITM Heritage center] JSON Updated');
-define('JSN_UPDATE_MSG', '[IITM Heritage center] JSON has been changed, please use following link to list photos / Albums for which JSON has been changed.<br /><a href="' . BASE_URL . 'moderate/list">list photos / Albums for moderation.</a>');
+define('JSN_UPDATE_MSG', '[IITM Heritage center] JSON has been changed, please use following link to list photos / Albums for which JSON has been changed.<br /><a href="' . BASE_URL . 'moderate/listItems">list photos / Albums for moderation.</a>');
 define('JSN_UPDATE_SUCCESS_MSG', 'An email has been sent to admin for moderation. After moderation an email will be sent to you.');
 define('JSN_UPDATE_ERROR_MSG', 'Error encountered. Please try again after some time. Sorry for the inconvenience.');
 define('JSN_WRITE_ERROR', 'Error encountered while writing modified data to a json file. Please check the permission');
