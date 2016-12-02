@@ -109,8 +109,8 @@ class viewHelper extends View {
 
         require_once('vendor/recaptchalib.php');
 
-        $publickey = "6Le_DBsTAAAAACt5YrgWhjW00CcAF0XYlA30oLPc";
-        $privatekey = "6Le_DBsTAAAAAH8rvyqjPXU9jxY5YJxXct76slWv";
+        $publickey = "6Lfpkg0UAAAAAKjTkZz9ZEQAwtDYjyOzpWp96r33";
+        $privatekey = "6Lfpkg0UAAAAAI_z7U3Us9QnUrDRK3E677iAzrON";
 
         echo recaptcha_get_html($publickey);
     }
