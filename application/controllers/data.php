@@ -126,10 +126,11 @@ class data extends Controller {
 
 			// echo '<p><a href="'. $photoUrl .'">Click here to see the updated photo details</a></p>';
 
-			//Updating a repository
-			$this->updateRepo();
-			array_push($_SESSION['statusMsg'],"Changes have been updated in github");
-
+			if(REQUIRE_GIT_TRACKING){
+				//Updating a repository
+				$this->updateRepo();
+				array_push($_SESSION['statusMsg'],"Changes have been updated in github");
+			}
 			//mail has to be sent to a person who has done changes to this JSON
 			//saying changes has been accepted and he can see it.
 			//array_push($_SESSION['statusMsg'],"Mail has been sent to contributor");
@@ -189,10 +190,11 @@ class data extends Controller {
 			array_push($_SESSION['statusMsg'],"Modified data written to Json " . $albumID . ".json" . " file");
 			$this->updateAlbumDetails($albumID,$moderationid,$fileContents);
 	
-			$this->updateRepo();
-			//Updating a repository
-			array_push($_SESSION['statusMsg'],"Changes have been updated in github");
-
+			if(REQUIRE_GIT_TRACKING){
+				$this->updateRepo();
+				//Updating a repository
+				array_push($_SESSION['statusMsg'],"Changes have been updated in github");
+			}
 			//mail has to be sent to a person who has done changes to this JSON
 			//saying changes has been accepted and he can see it.
 			//array_push($_SESSION['statusMsg'],"Mail has been sent to contributor");
