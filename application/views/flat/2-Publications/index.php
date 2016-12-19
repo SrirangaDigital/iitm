@@ -36,6 +36,118 @@
                 </ul>            
             </div>
         </div>
+        <div class="post">
+            <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/an-001.jpg">
+            <p class="image-desc">
+                <strong>Annual Number 1</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf" target="_blank">PDF</a></strong>
+                <button class="TOCtoggle toggle-button" data-name="001">TOC</button>
+                <div id="toc-001" class="toc">
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=5" target="_blank">Message</a><br />
+                        <span class="toc-author">Prof. B. Sengupto</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=6" target="_blank">Staff</a><br />
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=7" target="_blank">Editorial</a><br />
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=8" target="_blank">Chronicle for 1959-60</a><br />
+                        <span class="toc-author">R. C. Sinha</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=9" target="_blank">Inauguration of the Institute</a><br />
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=11" target="_blank">Amber-Old, Yet not Forgotten</a><br />
+                        <span class="toc-author">Y. Sahal</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=12" target="_blank">My Team to Mars</a><br />
+                        <span class="toc-author">R. Natarajan</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=14" target="_blank">``Q"</a><br />
+                        <span class="toc-author">P. C. Gupta</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=15" target="_blank">Lament of the Lamentable</a><br />
+                        <span class="toc-author">P. S. Srinivasan</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=16" target="_blank">Illumination Design - A Survey</a><br />
+                        <span class="toc-author">B. S. V. Gopalam</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=18" target="_blank">Brain Twisters</a><br />
+                        <span class="toc-author">B. S. Baliga</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=19" target="_blank">The Charms of Music</a><br />
+                        <span class="toc-author">P. S. Sundaram</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=20" target="_blank">One World State - Only Solution to World Peace</a><br />
+                        <span class="toc-author">R. C. Sinha</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=22" target="_blank">A Society Hero</a><br />
+                        <span class="toc-author">M. K. Suri</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=23" target="_blank">About our Library</a><br />
+                        <span class="toc-author">P. S. Srinivasan</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=24" target="_blank">On Humility</a><br />
+                        <span class="toc-author">T. Gopichand</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=25" target="_blank">Letter from Mr. Lamda to Miss Theeta</a><br />
+                        <span class="toc-author">K. Nayak</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=25" target="_blank">?</a><br />
+                        <span class="toc-author">R. T. Narayanan</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=26" target="_blank">Tit - Bits</a><br />
+                        <span class="toc-author">V. Joshi</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=26" target="_blank">Can you Tell?</a><br />
+                        <span class="toc-author">P. C. Gupta</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=27" target="_blank">Our First Academic Year</a><br />
+                        <span class="toc-author">D. Venkateswarlu</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=29" target="_blank">Laugh a While</a><br />
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=30" target="_blank">Definitions in Lighter Vein</a><br />
+                        <span class="toc-author">D. V.</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=31" target="_blank">Winners of Events at the Annual Athletic Meet held on February 21, 1960</a><br />
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=33" target="_blank">Results of Tournaments</a><br />
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=34" target="_blank">Sports Report</a><br />
+                        <span class="toc-author">S. Randhawa</span>
+                    </p>
+                    <p>
+                        <a href="<?=PUBLIC_URL?>pdf/annual-numbers/001.pdf#page=34" target="_blank">Economy of Via-Media (Mixed Economy) An Advocacy</a><br />
+                        <span class="toc-author">A. V. Rajagopalan</span>
+                    </p>
+                </div>                
+            </p>
+        </div>        
         <div class="post" id="AnnualNumber">
             <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/an-003.jpg">
             <p class="image-desc">
