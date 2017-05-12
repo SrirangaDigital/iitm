@@ -59,29 +59,15 @@ $(document).ready(function() {
 
 jQuery(window).load(function () {
 
+    buildMasonry();
 
-
-    // Takes the gutter width from the bottom margin of .post
-
-    var gutter = parseInt(jQuery('.post').css('marginBottom'));
-    var container = jQuery('#posts');
-
-
-
-    // Creates an instance of Masonry on #posts
-
-    container.masonry({
-        gutter: gutter,
-        itemSelector: '.post',
-        columnWidth: '.post'
-    });
-    
     // This code fires every time a user resizes the screen and only affects .post elements
     // whose parent class isn't .container. Triggers resize first so nothing looks weird.
     
     jQuery(window).bind('resize', buildMasonry()).trigger('resize');
-
+    
 });
+
 
 function buildMasonry(){
 
