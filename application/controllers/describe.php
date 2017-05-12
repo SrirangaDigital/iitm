@@ -21,10 +21,36 @@ class describe extends Controller {
 	}
 
 	public function collection($collection = DEFAULT_COLLECTION) {
+		
+		$data = $this->model->getGetData();
+		
+		unset($data['url']);
+		
+		if(!(isset($data["page"]))){
+		
+			$data["page"] = 1;
+		
+		}
+		
+		$result = $this->model->getAlbums($collection,$data);
 
-		$data = $this->model->getAlbums($collection);
-		($data) ? $this->view('describe/collection', $data) : $this->view('error/index');		
-	}	
+		if($data["page"] == 1){
+		
+			($result) ? $this->view('describe/collection', $result) : $this->view('error/index');
+		
+		}
+		else{
+		
+			echo json_encode($result);
+		
+		}
+	}
+
+	// public function collection($collection = DEFAULT_COLLECTION) {
+
+	// 	$data = $this->model->getAlbums($collection);
+	// 	($data) ? $this->view('describe/collection', $data) : $this->view('error/index');		
+	// }	
 }
 
 ?>

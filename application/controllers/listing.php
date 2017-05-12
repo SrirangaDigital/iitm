@@ -14,10 +14,37 @@ class listing extends Controller {
 	}
 
 	public function albums() {
+		
+		$data = $this->model->getGetData();
+		
+		unset($data['url']);
+		
+		if(!(isset($data["page"]))){
+		
+			$data["page"] = 1;
+		
+		}
+		
+		$result = $this->model->listAlbums($data);
+		
+		if($data["page"] == 1){
+		
+			($result) ? $this->view('listing/albums', $result) : $this->view('error/index');
+		
+		}
+		else{
+		
+			echo json_encode($result);
+		
+		}
+	}
 
-		$data = $this->model->listAlbums();
-		($data) ? $this->view('listing/albums', $data) : $this->view('error/index');
-	}	
+
+	// public function albums() {
+
+	// 	$data = $this->model->listAlbums();
+	// 	($data) ? $this->view('listing/albums', $data) : $this->view('error/index');
+	// }	
 
 	public function collections() {
 
@@ -26,9 +53,27 @@ class listing extends Controller {
 	}
 
 	public function photos($album = DEFAULT_ALBUM) {
+		
+		$data = $this->model->getGetData();
+		
+		unset($data['url']);
+		
+		if(!(isset($data["page"]))){
+		
+			$data["page"] = 1;
+		
+		}
+	
+		$result = $this->model->listPhotos($album,$data);
 
-		$data = $this->model->listPhotos($album);
-		($data) ? $this->view('listing/photos', $data) : $this->view('error/index');
+		if($data["page"] == 1){
+		
+			($result) ? $this->view('listing/photos', $result) : $this->view('error/index');
+		}
+		else{
+			
+			echo json_encode($result);			
+		}
 	}
 }
 

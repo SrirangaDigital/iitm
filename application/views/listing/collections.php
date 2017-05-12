@@ -1,3 +1,4 @@
+
 <div class="container">
     <div class="row first-row">
         <!-- Column 1 -->
@@ -37,6 +38,5 @@
 <?php } ?>
     </div>
 </div>
-
 
 
