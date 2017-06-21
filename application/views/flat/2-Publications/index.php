@@ -49,8 +49,8 @@
             </a>
         </div>
         <div class="post" id="the_rag_mandak">
-            <a href="<?=BASE_URL?>Publications/The Rag Mandak">
-                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak_1981-03-29.jpg">
+            <a href="<?=BASE_URL?>Publications/The_Rag_Mandak">
+                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/The_Rag_Mandak/1981-03-29.jpg">
                 <p class="image-desc">
                     <strong>The Rag Mandak</strong>
                 </p>
@@ -58,7 +58,7 @@
         </div>
         <div class="post" id="hochronicle">
             <a href="<?=BASE_URL?>Publications/Hochronicle">
-                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle_1981-09-02.jpg">
+                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Hochronicle/1981-09-02.jpg">
                 <p class="image-desc">
                     <strong>Hochronicle</strong>
                 </p>
@@ -66,7 +66,7 @@
         </div>
         <div class="post" id="hochronicle">
             <a href="<?=BASE_URL?>Publications/Mardi_Gras">
-                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Mardi_Gras-85.jpg">
+                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Mardi_Gras/Mardi_Gras-85.jpg">
                 <p class="image-desc">
                     <strong>Mardi Gras</strong>
                 </p>
@@ -74,7 +74,7 @@
         </div>
         <div class="post" id="hochronicle">
             <a href="<?=BASE_URL?>Publications/Pradeep_Annual_Numbers">
-                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/P_an-001.jpg">
+                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Pradeep/001.jpg">
                 <p class="image-desc">
                     <strong>Pradeep Annual Numbers</strong>
                 </p>
