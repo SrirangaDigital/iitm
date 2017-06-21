@@ -42,7 +42,7 @@
         </div>
         <div class="post" id="spectator">
             <a href="<?=BASE_URL?>Publications/Spectator">
-                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator_1982-02-28.jpg">
+                <img class="img-responsive" src="<?=PUBLIC_URL?>images/stock/Spectator/1982-02-28.jpg">
                 <p class="image-desc">
                     <strong>Spectator</strong>
                 </p>
