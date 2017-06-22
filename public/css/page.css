@@ -701,3 +701,7 @@ button.toggle-button{
 .feedback-title{
   font-size: 1.4em;
 }
+#viewletterimages{
+cursor: -webkit-zoom-in;
+cursor: zoom-in;
+}

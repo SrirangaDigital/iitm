@@ -34,7 +34,7 @@
                 <?php } ?>
             </ul>
             <?php $actualID = $viewHelper->getActualID($data->id); ?>
-            <div class="image-full-size">
+            <div id="viewletterimages" class="image-full-size">
                 <img class="img-responsive" src="<?=PHOTO_URL . $data->albumID . '/' . $actualID . '.JPG'?>">
             </div>
         </div>            
@@ -52,3 +52,4 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="<?=PUBLIC_URL?>js/viewer.js"></script>
