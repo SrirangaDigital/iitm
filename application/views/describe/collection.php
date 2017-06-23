@@ -134,5 +134,5 @@ $(document).ready(function(){
 <div id="hidden-data">
     <?php echo $hiddenData; ?>
 </div>
-<div id="loader-icon"><img src="<?=STOCK_IMAGE_URL?>loading.gif" /><div>
+<div id="loader-icon"><img src="<?=STOCK_IMAGE_URL?>loading.gif" /></div>
 

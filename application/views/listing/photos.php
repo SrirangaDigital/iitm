@@ -136,4 +136,4 @@ $(document).ready(function(){
 </div>
 <div id="loader-icon">
     <img src="<?=STOCK_IMAGE_URL?>loading.gif" />
-<div>
+</div>
