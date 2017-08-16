@@ -36,16 +36,26 @@
             </p>
         </div>   
         <div class="post">
-			<a href="<?=PUBLIC_URL?>multimedia/Prof_Subramanian_interview.mp3" target="_blank">
+            <a href="<?=PUBLIC_URL?>multimedia/Prof_Subramanian_interview.mp3" target="_blank">
+                <div class="icon-large">
+                    <i class="fa fa-volume-up icon-large"></i>
+                </div>
+            </a>    
+            <p class="image-desc">
+                <strong>Prof. Subramanian Interview</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof_Subramanian_interview.mp3" target="_blank">Listen to the Audio</a></strong>  
+            </p>
+        </div>        
+        <div class="post">
+			<a href="<?=PUBLIC_URL?>multimedia/Prof_Thulapurkar_Interview.mp3" target="_blank">
 				<div class="icon-large">
 					<i class="fa fa-volume-up icon-large"></i>
 				</div>
 			</a>	
             <p class="image-desc">
-                <strong>Prof. Subramanian Interview</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof_Subramanian_interview.mp3" target="_blank">Listen to the Audio</a></strong>  
+                <strong>Prof. Thulapurkar Interview</strong><br />
+                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof_Thulapurkar_Interview.mp3" target="_blank">Listen to the Audio</a></strong>  
             </p>
         </div>  
-    
     </div>
 </div>
