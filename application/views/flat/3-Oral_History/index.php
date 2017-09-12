@@ -91,25 +91,25 @@
             </p>
         </div>
         <div class="post">
-            <a href="<?=PUBLIC_URL?>multimedia/Prof. Ramani.mp3" target="_blank">
+            <a href="<?=PUBLIC_URL?>multimedia/Prof._Ramani.mp3" target="_blank">
                 <div class="icon-large">
                     <i class="fa fa-volume-up icon-large"></i>
                 </div>
             </a>    
             <p class="image-desc">
                 <strong>Prof. S. Ramani in conversation with Prof. C.S. Swamy.<br />3 August 2017.</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof. Ramani.mp3" target="_blank">Listen to the Audio</a></strong>  
+                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof._Ramani.mp3" target="_blank">Listen to the Audio</a></strong>  
             </p>
         </div>
         <div class="post">
-            <a href="<?=PUBLIC_URL?>multimedia/Prof. S.N. Majhi.mp3" target="_blank">
+            <a href="<?=PUBLIC_URL?>multimedia/Prof._S.N._Majhi.mp3" target="_blank">
                 <div class="icon-large">
                     <i class="fa fa-volume-up icon-large"></i>
                 </div>
             </a>    
             <p class="image-desc">
                 <strong>Prof. S.N. Majhi, retd. in conversation with Prof. Sundar of Dept. of Mathematics.<br />3 August 2017.</strong><br />
-                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof. S.N. Majhi.mp3" target="_blank">Listen to the Audio</a></strong>  
+                <strong><a href="<?=PUBLIC_URL?>multimedia/Prof._S.N._Majhi.mp3" target="_blank">Listen to the Audio</a></strong>  
             </p>
         </div>
     </div>
